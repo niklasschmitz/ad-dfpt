@@ -1,0 +1,54 @@
+┌ Info: Threading setup: 
+│   Threads.nthreads() = 4
+│   n_DFTK = 4
+│   n_fft = 1
+└   n_blas = 4
+┌ Info: 2025-08-08T17:38:13.883
+│   file = "runs/CsCl.extxyz_kgrid8_relax_scfres0.jld2"
+│   v0 = 501.00102706104343
+│   Ecut = 29.0
+└   kgrid = MonkhorstPack([8, 8, 8])
+┌ Info: 2025-08-08T17:38:15.132
+│   length(model0.symmetries) = 48
+│   length(symmetries_strain) = 8
+│   strain_pattern =
+│    6-element Vector{Float64}:
+│     1.0
+└     ⋮
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -39.89835595535                   -1.11    5.1    11.7s
+  2   -39.90415192554       -2.24       -1.06    2.3    6.63s
+  3   -39.91728765260       -1.88       -1.81    3.6    4.13s
+  4   -39.91756077784       -3.56       -2.59    2.2    2.92s
+  5   -39.91758521549       -4.61       -3.19    4.1    4.55s
+  6   -39.91758569760       -6.32       -3.98    4.0    3.33s
+  7   -39.91758574037       -7.37       -4.46    4.4    5.09s
+  8   -39.91758574132       -9.02       -5.18    3.2    3.05s
+  9   -39.91758574146       -9.85       -5.90    4.3    4.13s
+ 10   -39.91758574146      -11.39       -6.43    4.6    4.70s
+Solving response problem
+Iter  Restart  Krydim  log10(res)  avg(CG)  Δtime   Comment
+----  -------  ------  ----------  -------  ------  ---------------
+                                     187.5   55.5s  Non-interacting
+   1        0       1        0.90    147.7   63.4s  
+   2        0       2        0.36    132.6   39.2s  
+   3        0       3       -0.45    123.2   36.5s  
+   4        0       4       -1.55    106.2   31.8s  
+   5        0       5       -2.45     85.1   25.8s  
+   6        0       6       -3.49     60.0   19.4s  
+   7        0       7       -4.23     35.0   12.2s  
+   8        0       8       -5.35     22.5   9.17s  
+   9        0       9       -6.97      8.0   4.93s  
+  10        1       1       -6.58    170.4   51.9s  Restart
+                                     183.2   52.6s  Final orbitals
+┌ Info: 2025-08-08T17:49:13.875
+│   tol = 1.0e-6
+│   Ecut = 29.0
+│   c11 = 32.60605864010837
+│   c12 = 5.50988548138476
+│   c44 = 4.975422313798042
+│   stress = 6-element StaticArraysCore.SVector{6, Float64} with indices SOneTo(6): …
+└   dstress = 6-element StaticArraysCore.SVector{6, Float64} with indices SOneTo(6): …
+┌ Info: Finished.
+└   now() = 2025-08-08T17:49:14.610

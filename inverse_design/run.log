@@ -1,0 +1,271 @@
+┌ Info: Threading setup: 
+│   Threads.nthreads() = 4
+│   n_DFTK = 4
+│   n_fft = 1
+└   n_blas = 4
+┌ Warning: Negative ρcore detected: Dual{ForwardDiff.Tag{typeof(bandgap_loss), Float64}}(-3.276415332051204e-8,-5.866133083903024e-7)
+└ @ DFTK ~/.julia/packages/DFTK/7Lu4k/src/terms/xc.jl:39
+┌ Warning: Negative ρcore detected: -3.2764153217218715e-8
+└ @ DFTK ~/.julia/packages/DFTK/7Lu4k/src/terms/xc.jl:39
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -182.5584380763                   -1.05    4.5    11.8s
+  2   -182.5640293359       -2.25       -1.56    1.1    4.99s
+  3   -182.5652874366       -2.90       -1.97    2.0    2.40s
+  4   -182.5653181083       -4.51       -2.88    1.2    1.70s
+  5   -182.5653221007       -5.40       -3.00    3.0    3.03s
+  6   -182.5653222831       -6.74       -3.24    2.0    2.38s
+  7   -182.5653223495       -7.18       -3.80    1.0    1.72s
+  8   -182.5653223658       -7.79       -4.05    3.0    2.92s
+  9   -182.5653223684       -8.60       -4.45    1.3    1.83s
+ 10   -182.5653223692       -9.07       -5.09    2.4    2.48s
+ 11   -182.5653223693      -10.22       -5.29    2.5    2.65s
+ 12   -182.5653223693      -11.30       -5.50    1.0    1.63s
+ 13   -182.5653223693      -11.26       -6.38    2.0    2.36s
+Solving response problem
+[ Info: GMRES linsolve starts with norm of residual = 3.77e+02
+[ Info: GMRES linsolve in iteration 1; step 1: normres = 4.48e+01
+[ Info: GMRES linsolve in iteration 1; step 2: normres = 6.76e+00
+[ Info: GMRES linsolve in iteration 1; step 3: normres = 1.31e+00
+[ Info: GMRES linsolve in iteration 1; step 4: normres = 2.26e-01
+[ Info: GMRES linsolve in iteration 1; step 5: normres = 2.72e-02
+[ Info: GMRES linsolve in iteration 1; step 6: normres = 1.92e-03
+[ Info: GMRES linsolve in iteration 1; step 7: normres = 1.14e-04
+[ Info: GMRES linsolve in iteration 1; step 8: normres = 6.66e-06
+[ Info: GMRES linsolve in iteration 1; step 9: normres = 8.98e-06
+[ Info: GMRES linsolve in iteration 2; step 1: normres = 1.08e-06
+┌ Info: GMRES linsolve converged at iteration 2, step 2:
+│ * norm of residual = 2.34e-07
+└ * number of operations = 13
+Iter     Function value   Gradient norm 
+     0     6.159981e-04     3.959421e-02
+ * time: 3.695487976074219e-5
+┌ Warning: Negative ρcore detected: Dual{ForwardDiff.Tag{typeof(bandgap_loss), Float64}}(-2.732084541037089e-8,8.319695425370802e-7)
+└ @ DFTK ~/.julia/packages/DFTK/7Lu4k/src/terms/xc.jl:39
+┌ Warning: Negative ρcore detected: -2.732084531742055e-8
+└ @ DFTK ~/.julia/packages/DFTK/7Lu4k/src/terms/xc.jl:39
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -182.5532030637                   -1.01    4.5    3.59s
+  2   -182.5581499113       -2.31       -1.46    1.6    1.60s
+  3   -182.5599183726       -2.75       -1.96    2.0    2.03s
+  4   -182.5599977650       -4.10       -2.70    1.8    1.54s
+  5   -182.5600059768       -5.09       -3.17    3.0    2.23s
+  6   -182.5600061568       -6.74       -3.69    2.2    1.97s
+  7   -182.5600061760       -7.72       -3.89    2.0    2.02s
+  8   -182.5600061813       -8.28       -4.81    1.8    1.72s
+  9   -182.5600061816       -9.54       -5.13    2.6    2.15s
+ 10   -182.5600061816      -10.64       -5.61    2.0    1.81s
+ 11   -182.5600061816      -11.65       -6.60    2.0    1.81s
+Solving response problem
+[ Info: GMRES linsolve starts with norm of residual = 3.79e+02
+[ Info: GMRES linsolve in iteration 1; step 1: normres = 4.54e+01
+[ Info: GMRES linsolve in iteration 1; step 2: normres = 7.33e+00
+[ Info: GMRES linsolve in iteration 1; step 3: normres = 1.84e+00
+[ Info: GMRES linsolve in iteration 1; step 4: normres = 2.05e-01
+[ Info: GMRES linsolve in iteration 1; step 5: normres = 2.60e-02
+[ Info: GMRES linsolve in iteration 1; step 6: normres = 1.83e-03
+[ Info: GMRES linsolve in iteration 1; step 7: normres = 9.82e-05
+[ Info: GMRES linsolve in iteration 1; step 8: normres = 5.32e-06
+[ Info: GMRES linsolve in iteration 1; step 9: normres = 2.97e-07
+[ Info: GMRES linsolve in iteration 1; step 10: normres = 8.53e-06
+[ Info: GMRES linsolve in iteration 2; step 1: normres = 1.10e-06
+[ Info: GMRES linsolve in iteration 2; step 2: normres = 3.12e-07
+┌ Info: GMRES linsolve converged at iteration 2, step 3:
+│ * norm of residual = 5.30e-08
+└ * number of operations = 15
+┌ Warning: Negative ρcore detected: Dual{ForwardDiff.Tag{typeof(bandgap_loss), Float64}}(-3.0190287712895344e-8,-1.1689627808761458e-7)
+└ @ DFTK ~/.julia/packages/DFTK/7Lu4k/src/terms/xc.jl:39
+┌ Warning: Negative ρcore detected: -3.0190287712895344e-8
+└ @ DFTK ~/.julia/packages/DFTK/7Lu4k/src/terms/xc.jl:39
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -182.5559642608                   -1.02    4.5    3.61s
+  2   -182.5609831386       -2.30       -1.47    1.5    1.60s
+  3   -182.5626891566       -2.77       -1.95    2.0    2.11s
+  4   -182.5627656796       -4.12       -2.74    1.7    1.63s
+  5   -182.5627737001       -5.10       -3.13    3.0    2.37s
+  6   -182.5627738604       -6.80       -3.41    2.1    1.93s
+  7   -182.5627739068       -7.33       -4.29    1.8    1.83s
+  8   -182.5627739104       -8.45       -4.27    2.6    2.36s
+  9   -182.5627739115       -8.94       -5.36    2.0    1.83s
+ 10   -182.5627739115      -10.74       -5.42    2.9    2.55s
+ 11   -182.5627739115      -11.23       -5.95    1.3    1.35s
+ 12   -182.5627739115      -11.91       -6.18    2.7    2.24s
+Solving response problem
+[ Info: GMRES linsolve starts with norm of residual = 3.68e+02
+[ Info: GMRES linsolve in iteration 1; step 1: normres = 4.40e+01
+[ Info: GMRES linsolve in iteration 1; step 2: normres = 6.94e+00
+[ Info: GMRES linsolve in iteration 1; step 3: normres = 1.69e+00
+[ Info: GMRES linsolve in iteration 1; step 4: normres = 2.06e-01
+[ Info: GMRES linsolve in iteration 1; step 5: normres = 2.56e-02
+[ Info: GMRES linsolve in iteration 1; step 6: normres = 1.81e-03
+[ Info: GMRES linsolve in iteration 1; step 7: normres = 9.99e-05
+[ Info: GMRES linsolve in iteration 1; step 8: normres = 5.54e-06
+[ Info: GMRES linsolve in iteration 1; step 9: normres = 2.64e-05
+[ Info: GMRES linsolve in iteration 2; step 1: normres = 2.75e-06
+[ Info: GMRES linsolve in iteration 2; step 2: normres = 7.00e-07
+┌ Info: GMRES linsolve converged at iteration 2, step 3:
+│ * norm of residual = 1.52e-07
+└ * number of operations = 14
+     1     1.609145e-06     2.217301e-03
+ * time: 1315.9977641105652
+┌ Warning: Negative ρcore detected: Dual{ForwardDiff.Tag{typeof(bandgap_loss), Float64}}(-2.966924093569297e-8,-5.142537238541971e-7)
+└ @ DFTK ~/.julia/packages/DFTK/7Lu4k/src/terms/xc.jl:39
+┌ Warning: Negative ρcore detected: -2.966924093569297e-8
+└ @ DFTK ~/.julia/packages/DFTK/7Lu4k/src/terms/xc.jl:39
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -182.5556446025                   -1.02    4.6    3.67s
+  2   -182.5606274921       -2.30       -1.47    1.4    1.68s
+  3   -182.5623555106       -2.76       -1.95    2.0    2.23s
+  4   -182.5624302525       -4.13       -2.73    1.7    1.65s
+  5   -182.5624381734       -5.10       -3.12    2.9    2.53s
+  6   -182.5624383484       -6.76       -3.43    2.0    2.05s
+  7   -182.5624383956       -7.33       -4.27    2.0    2.00s
+  8   -182.5624383982       -8.58       -4.53    2.1    2.21s
+  9   -182.5624383985       -9.48       -5.70    2.0    2.03s
+ 10   -182.5624383985      -11.11       -5.51    3.3    2.85s
+ 11   -182.5624383985      -11.45       -6.07    2.0    1.94s
+Solving response problem
+[ Info: GMRES linsolve starts with norm of residual = 3.70e+02
+[ Info: GMRES linsolve in iteration 1; step 1: normres = 4.42e+01
+[ Info: GMRES linsolve in iteration 1; step 2: normres = 6.99e+00
+[ Info: GMRES linsolve in iteration 1; step 3: normres = 1.72e+00
+[ Info: GMRES linsolve in iteration 1; step 4: normres = 2.06e-01
+[ Info: GMRES linsolve in iteration 1; step 5: normres = 2.57e-02
+[ Info: GMRES linsolve in iteration 1; step 6: normres = 1.81e-03
+[ Info: GMRES linsolve in iteration 1; step 7: normres = 9.97e-05
+[ Info: GMRES linsolve in iteration 1; step 8: normres = 5.51e-06
+[ Info: GMRES linsolve in iteration 1; step 9: normres = 2.77e-05
+[ Info: GMRES linsolve in iteration 2; step 1: normres = 3.96e-06
+[ Info: GMRES linsolve in iteration 2; step 2: normres = 8.64e-07
+┌ Info: GMRES linsolve converged at iteration 2, step 3:
+│ * norm of residual = 2.01e-07
+└ * number of operations = 14
+┌ Warning: Negative ρcore detected: Dual{ForwardDiff.Tag{typeof(bandgap_loss), Float64}}(-2.9778174987273826e-8,-4.5836201045900665e-7)
+└ @ DFTK ~/.julia/packages/DFTK/7Lu4k/src/terms/xc.jl:39
+┌ Warning: Negative ρcore detected: -2.9778174987273826e-8
+└ @ DFTK ~/.julia/packages/DFTK/7Lu4k/src/terms/xc.jl:39
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -182.5556951148                   -1.02    4.5    4.01s
+  2   -182.5606750963       -2.30       -1.47    1.5    1.75s
+  3   -182.5624005892       -2.76       -1.95    2.0    2.07s
+  4   -182.5624766569       -4.12       -2.73    1.7    1.55s
+  5   -182.5624845084       -5.11       -3.14    3.0    2.30s
+  6   -182.5624846734       -6.78       -3.46    2.1    1.92s
+  7   -182.5624847158       -7.37       -4.17    2.0    1.86s
+  8   -182.5624847181       -8.62       -4.72    2.0    2.05s
+  9   -182.5624847183       -9.81       -5.81    2.0    1.82s
+ 10   -182.5624847183      -11.19       -5.68    3.2    2.64s
+ 11   -182.5624847183      -11.98       -6.08    1.0    1.32s
+Solving response problem
+[ Info: GMRES linsolve starts with norm of residual = 3.69e+02
+[ Info: GMRES linsolve in iteration 1; step 1: normres = 4.41e+01
+[ Info: GMRES linsolve in iteration 1; step 2: normres = 6.99e+00
+[ Info: GMRES linsolve in iteration 1; step 3: normres = 1.71e+00
+[ Info: GMRES linsolve in iteration 1; step 4: normres = 2.06e-01
+[ Info: GMRES linsolve in iteration 1; step 5: normres = 2.57e-02
+[ Info: GMRES linsolve in iteration 1; step 6: normres = 1.81e-03
+[ Info: GMRES linsolve in iteration 1; step 7: normres = 9.97e-05
+[ Info: GMRES linsolve in iteration 1; step 8: normres = 5.52e-06
+[ Info: GMRES linsolve in iteration 1; step 9: normres = 2.77e-05
+[ Info: GMRES linsolve in iteration 2; step 1: normres = 3.90e-06
+[ Info: GMRES linsolve in iteration 2; step 2: normres = 8.84e-07
+┌ Info: GMRES linsolve converged at iteration 2, step 3:
+│ * norm of residual = 2.01e-07
+└ * number of operations = 14
+     2     1.633463e-12     2.243718e-06
+ * time: 2540.348822116852
+┌ Warning: Negative ρcore detected: Dual{ForwardDiff.Tag{typeof(bandgap_loss), Float64}}(-2.9777503260013248e-8,-4.5872499085534527e-7)
+└ @ DFTK ~/.julia/packages/DFTK/7Lu4k/src/terms/xc.jl:39
+┌ Warning: Negative ρcore detected: -2.9777503260013248e-8
+└ @ DFTK ~/.julia/packages/DFTK/7Lu4k/src/terms/xc.jl:39
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -182.5556847626                   -1.02    4.5    3.66s
+  2   -182.5606807579       -2.30       -1.47    1.5    1.52s
+  3   -182.5624001302       -2.76       -1.96    2.0    1.96s
+  4   -182.5624762643       -4.12       -2.73    1.7    1.49s
+  5   -182.5624841998       -5.10       -3.14    2.9    2.20s
+  6   -182.5624843741       -6.76       -3.48    2.1    1.84s
+  7   -182.5624844146       -7.39       -4.12    2.0    1.82s
+  8   -182.5624844170       -8.62       -4.77    2.0    1.95s
+  9   -182.5624844171       -9.87       -5.86    2.1    1.91s
+ 10   -182.5624844171      -11.18       -5.71    3.2    2.67s
+ 11   -182.5624844171      -12.03       -6.12    1.0    1.36s
+Solving response problem
+[ Info: GMRES linsolve starts with norm of residual = 3.69e+02
+[ Info: GMRES linsolve in iteration 1; step 1: normres = 4.41e+01
+[ Info: GMRES linsolve in iteration 1; step 2: normres = 6.99e+00
+[ Info: GMRES linsolve in iteration 1; step 3: normres = 1.71e+00
+[ Info: GMRES linsolve in iteration 1; step 4: normres = 2.06e-01
+[ Info: GMRES linsolve in iteration 1; step 5: normres = 2.57e-02
+[ Info: GMRES linsolve in iteration 1; step 6: normres = 1.81e-03
+[ Info: GMRES linsolve in iteration 1; step 7: normres = 9.97e-05
+[ Info: GMRES linsolve in iteration 1; step 8: normres = 5.52e-06
+[ Info: GMRES linsolve in iteration 1; step 9: normres = 2.58e-05
+[ Info: GMRES linsolve in iteration 2; step 1: normres = 3.42e-06
+[ Info: GMRES linsolve in iteration 2; step 2: normres = 9.79e-07
+┌ Info: GMRES linsolve converged at iteration 2, step 3:
+│ * norm of residual = 2.01e-07
+└ * number of operations = 14
+┌ Warning: Negative ρcore detected: Dual{ForwardDiff.Tag{typeof(bandgap_loss), Float64}}(-2.977750985550995e-8,-4.5872165544444855e-7)
+└ @ DFTK ~/.julia/packages/DFTK/7Lu4k/src/terms/xc.jl:39
+┌ Warning: Negative ρcore detected: -2.977750985550995e-8
+└ @ DFTK ~/.julia/packages/DFTK/7Lu4k/src/terms/xc.jl:39
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -182.5556860663                   -1.02    4.5    3.59s
+  2   -182.5606790557       -2.30       -1.47    1.5    1.58s
+  3   -182.5624021482       -2.76       -1.95    2.0    2.08s
+  4   -182.5624760619       -4.13       -2.73    1.6    1.49s
+  5   -182.5624841832       -5.09       -3.10    3.0    2.25s
+  6   -182.5624843515       -6.77       -3.33    2.1    1.76s
+  7   -182.5624844089       -7.24       -4.14    1.2    1.45s
+  8   -182.5624844153       -8.20       -3.98    3.0    2.41s
+  9   -182.5624844198       -8.34       -5.38    2.0    1.81s
+ 10   -182.5624844199      -10.30       -5.37    3.9    2.88s
+ 11   -182.5624844199      -10.97       -5.91    1.9    1.78s
+ 12   -182.5624844199      -11.74       -6.58    2.2    2.02s
+Solving response problem
+[ Info: GMRES linsolve starts with norm of residual = 3.69e+02
+[ Info: GMRES linsolve in iteration 1; step 1: normres = 4.41e+01
+[ Info: GMRES linsolve in iteration 1; step 2: normres = 6.99e+00
+[ Info: GMRES linsolve in iteration 1; step 3: normres = 1.71e+00
+[ Info: GMRES linsolve in iteration 1; step 4: normres = 2.06e-01
+[ Info: GMRES linsolve in iteration 1; step 5: normres = 2.57e-02
+[ Info: GMRES linsolve in iteration 1; step 6: normres = 1.81e-03
+[ Info: GMRES linsolve in iteration 1; step 7: normres = 9.97e-05
+[ Info: GMRES linsolve in iteration 1; step 8: normres = 5.52e-06
+[ Info: GMRES linsolve in iteration 1; step 9: normres = 3.02e-07
+[ Info: GMRES linsolve in iteration 1; step 10: normres = 7.83e-06
+[ Info: GMRES linsolve in iteration 2; step 1: normres = 9.22e-07
+┌ Info: GMRES linsolve converged at iteration 2, step 2:
+│ * norm of residual = 1.50e-07
+└ * number of operations = 14
+     3     1.915267e-16     2.429573e-08
+ * time: 3817.965324163437
+ * Status: success
+
+ * Candidate solution
+    Final objective value:     1.915267e-16
+
+ * Found with
+    Algorithm:     BFGS
+
+ * Convergence measures
+    |x - x'|               = 1.45e-06 ≤ 1.0e-03
+    |x - x'|/|x'|          = 4.90e-05 ≰ 0.0e+00
+    |f(x) - f(x')|         = 1.63e-12 ≰ 0.0e+00
+    |f(x) - f(x')|/|f(x')| = 8.53e+03 ≰ 0.0e+00
+    |g(x)|                 = 2.43e-08 ≰ 1.0e-08
+
+ * Work counters
+    Seconds run:   3818  (vs limit Inf)
+    Iterations:    3
+    f(x) calls:    7
+    ∇f(x) calls:   7
+
+Optimized design strain η = [-0.029614572266723274]

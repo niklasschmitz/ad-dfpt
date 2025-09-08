@@ -1,0 +1,98 @@
+┌ Info: Threading setup: 
+│   Threads.nthreads() = 4
+│   n_DFTK = 4
+│   n_fft = 1
+└   n_blas = 4
+┌ Info: 2025-08-08T16:12:43.285
+│   file = "runs/C.extxyz_kgrid8_relax_scfres0.jld2"
+│   v0 = 76.87605791541678
+│   Ecut = 41.0
+└   kgrid = MonkhorstPack([8, 8, 8])
+┌ Info: 2025-08-08T16:12:44.549
+│   length(model0.symmetries) = 48
+│   length(symmetries_strain) = 8
+│   strain_pattern = 6-element Vector{Float64}: …
+└   h_range = 3-element Vector{Float64}: …
+┌ Info: 2025-08-08T16:12:45.093
+│   tol = 0.0001
+└   h = 0.001
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -12.03138200100                   -0.74    4.6    7.58s
+  2   -12.03761257912       -2.21       -1.68    2.0    4.02s
+  3   -12.03784583688       -3.63       -2.31    2.4    614ms
+  4   -12.03785219934       -5.20       -3.56    2.1    551ms
+  5   -12.03785244283       -6.61       -4.23    3.6    644ms
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -12.03141505505                   -0.74    4.5    871ms
+  2   -12.03761480746       -2.21       -1.68    2.0    382ms
+  3   -12.03784716379       -3.63       -2.31    2.3    558ms
+  4   -12.03785346366       -5.20       -3.57    2.0    534ms
+  5   -12.03785372580       -6.58       -4.21    3.7    596ms
+┌ Info: 2025-08-08T16:13:41.012
+│   tol = 0.0001
+│   h = 0.001
+│   Ecut = 41.0
+│   c11 = 1051.9394889801433
+│   c12 = 124.08502898161485
+│   c44 = 563.0460976661897
+│   stress1 = 6-element StaticArraysCore.SVector{6, Float64} with indices SOneTo(6): …
+│   stress2 = 6-element StaticArraysCore.SVector{6, Float64} with indices SOneTo(6): …
+└   dstress = 6-element StaticArraysCore.SVector{6, Float64} with indices SOneTo(6): …
+┌ Info: 2025-08-08T16:13:41.740
+│   tol = 0.0001
+└   h = 1.0e-5
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -12.03140924138                   -0.74    4.5    758ms
+  2   -12.03761664983       -2.21       -1.68    1.9    473ms
+  3   -12.03784862839       -3.63       -2.31    2.4    442ms
+  4   -12.03785504845       -5.19       -3.57    2.0    538ms
+  5   -12.03785531241       -6.58       -4.20    3.6    582ms
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -12.03140818757                   -0.74    4.6    691ms
+  2   -12.03761736404       -2.21       -1.68    1.9    483ms
+  3   -12.03784823510       -3.64       -2.32    2.3    423ms
+  4   -12.03785507595       -5.16       -3.52    2.0    552ms
+  5   -12.03785531229       -6.63       -4.27    3.7    565ms
+┌ Info: 2025-08-08T16:13:57.738
+│   tol = 0.0001
+│   h = 1.0e-5
+│   Ecut = 41.0
+│   c11 = 898.0137133083402
+│   c12 = -33.34196094676056
+│   c44 = 590.1571186558235
+│   stress1 = 6-element StaticArraysCore.SVector{6, Float64} with indices SOneTo(6): …
+│   stress2 = 6-element StaticArraysCore.SVector{6, Float64} with indices SOneTo(6): …
+└   dstress = 6-element StaticArraysCore.SVector{6, Float64} with indices SOneTo(6): …
+┌ Info: 2025-08-08T16:13:57.764
+│   tol = 0.0001
+└   h = 1.0e-7
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -12.03140531933                   -0.74    4.5    812ms
+  2   -12.03761669537       -2.21       -1.68    2.0    480ms
+  3   -12.03784862732       -3.63       -2.31    2.4    416ms
+  4   -12.03785505911       -5.19       -3.56    2.0    534ms
+  5   -12.03785531256       -6.60       -4.21    3.6    559ms
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -12.03140731536                   -0.74    4.6    814ms
+  2   -12.03761688433       -2.21       -1.68    2.0    470ms
+  3   -12.03784862569       -3.63       -2.31    2.4    423ms
+  4   -12.03785505706       -5.19       -3.56    2.1    524ms
+  5   -12.03785531262       -6.59       -4.22    3.6    562ms
+┌ Info: 2025-08-08T16:14:13.661
+│   tol = 0.0001
+│   h = 1.0e-7
+│   Ecut = 41.0
+│   c11 = -1102.10282678862
+│   c12 = -3330.204417240793
+│   c44 = -3778.49305785264
+│   stress1 = 6-element StaticArraysCore.SVector{6, Float64} with indices SOneTo(6): …
+│   stress2 = 6-element StaticArraysCore.SVector{6, Float64} with indices SOneTo(6): …
+└   dstress = 6-element StaticArraysCore.SVector{6, Float64} with indices SOneTo(6): …
+┌ Info: Finished.
+└   now() = 2025-08-08T16:14:13.663

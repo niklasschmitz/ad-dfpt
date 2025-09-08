@@ -1,0 +1,45 @@
+┌ Info: Threading setup: 
+│   Threads.nthreads() = 4
+│   n_DFTK = 4
+│   n_fft = 1
+└   n_blas = 4
+┌ Info: 2025-08-08T16:10:10.910
+│   file = "runs/C.extxyz_kgrid8_relax_scfres0.jld2"
+│   v0 = 76.87605791541678
+│   Ecut = 41.0
+└   kgrid = MonkhorstPack([8, 8, 8])
+┌ Info: 2025-08-08T16:10:12.190
+│   length(model0.symmetries) = 48
+│   length(symmetries_strain) = 8
+│   strain_pattern =
+│    6-element Vector{Float64}:
+│     1.0
+└     ⋮
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -12.03140276695                   -0.74    4.5    7.40s
+  2   -12.03761594780       -2.21       -1.68    1.9    4.24s
+  3   -12.03784873037       -3.63       -2.31    2.4    531ms
+  4   -12.03785505051       -5.20       -3.57    2.0    727ms
+  5   -12.03785531261       -6.58       -4.19    3.6    867ms
+Solving response problem
+Iter  Restart  Krydim  log10(res)  avg(CG)  Δtime   Comment
+----  -------  ------  ----------  -------  ------  ---------------
+                                      50.3   7.16s  Non-interacting
+   1        0       1        0.41     37.2   23.0s  
+   2        0       2       -0.75     31.8   2.33s  
+   3        0       3       -1.72     23.9   1.63s  
+   4        0       4       -2.82     18.1   1.53s  
+   5        0       5       -4.38      7.4   806ms  
+   6        1       1       -5.08     45.6   3.24s  Restart
+                                      49.9   3.56s  Final orbitals
+┌ Info: 2025-08-08T16:12:30.290
+│   tol = 0.0001
+│   Ecut = 41.0
+│   c11 = 1056.8490382909592
+│   c12 = 125.18527055888477
+│   c44 = 564.6085604733753
+│   stress = 6-element StaticArraysCore.SVector{6, Float64} with indices SOneTo(6): …
+└   dstress = 6-element StaticArraysCore.SVector{6, Float64} with indices SOneTo(6): …
+┌ Info: Finished.
+└   now() = 2025-08-08T16:12:31.048

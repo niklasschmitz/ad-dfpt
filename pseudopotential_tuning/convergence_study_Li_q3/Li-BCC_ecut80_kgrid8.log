@@ -1,0 +1,121 @@
+┌ Info: Threading setup: 
+│   Threads.nthreads() = 4
+│   n_DFTK = 4
+│   n_fft = 1
+└   n_blas = 4
+PlaneWaveBasis discretization:
+    architecture         : DFTK.CPU()
+    num. mpi processes   : 1
+    num. julia threads   : 4
+    num. DFTK  threads   : 4
+    num. blas  threads   : 4
+    num. fft   threads   : 1
+
+    Ecut                 : 80.0 Ha
+    fft_size             : (48, 48, 48), 110592 total points
+    kgrid                : MonkhorstPack([8, 8, 8])
+    num.   red. kpoints  : 512
+    num. irred. kpoints  : 29
+
+    Discretized Model(gga_x_pbe+gga_c_pbe, 3D):
+        lattice (in Bohr)    : [-3.24564  , 3.24564   , 3.24564   ]
+                               [3.24564   , -3.24564  , 3.24564   ]
+                               [3.24564   , 3.24564   , -3.24564  ]
+        unit cell volume     : 136.76 Bohr³
+    
+        atoms                : Li
+        atom potentials      : ElementPsp(Li, "/home/schmitz/.julia/artifacts/f1bfd008ea139fa64ade84ec411dcd58686576e4/Li.gth")
+    
+        num. electrons       : 3
+        spin polarization    : none
+        temperature          : 0.00225 Ha
+        smearing             : DFTK.Smearing.Gaussian()
+    
+        terms                : Kinetic()
+                               AtomicLocal()
+                               AtomicNonlocal()
+                               Ewald(nothing)
+                               PspCorrection()
+                               Hartree()
+                               Xc(gga_x_pbe, gga_c_pbe)
+                               Entropy()n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -7.451084469125                   -0.15    4.1    6.99s
+  2   -7.468882899816       -1.75       -0.69    2.0    3.08s
+  3   -7.470624516530       -2.76       -1.62    2.3    794ms
+  4   -7.470653397590       -4.54       -2.30    1.0    575ms
+  5   -7.470657665118       -5.37       -3.19    1.7    657ms
+  6   -7.470657766999       -6.99       -3.69    2.2    580ms
+  7   -7.470657773423       -8.19       -4.17    1.8    602ms
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -7.450994126218                   -0.15    4.1    960ms
+  2   -7.468977206779       -1.75       -0.69    2.0    733ms
+  3   -7.470702911240       -2.76       -1.62    2.4    803ms
+  4   -7.470730952659       -4.55       -2.29    1.0    571ms
+  5   -7.470735218070       -5.37       -3.21    1.8    703ms
+  6   -7.470735318473       -7.00       -3.69    2.2    657ms
+  7   -7.470735324998       -8.19       -4.18    1.7    665ms
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -7.450875598608                   -0.15    4.1    911ms
+  2   -7.469038964219       -1.74       -0.69    2.0    694ms
+  3   -7.470749202063       -2.77       -1.63    2.2    616ms
+  4   -7.470776487160       -4.56       -2.29    1.0    588ms
+  5   -7.470780724118       -5.37       -3.23    1.7    814ms
+  6   -7.470780822735       -7.01       -3.68    2.3    577ms
+  7   -7.470780829414       -8.18       -4.14    1.8    669ms
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -7.450729902981                   -0.15    4.1    966ms
+  2   -7.469073556931       -1.74       -0.69    2.0    712ms
+  3   -7.470768930839       -2.77       -1.63    2.4    632ms
+  4   -7.470795467207       -4.58       -2.29    1.0    579ms
+  5   -7.470799726365       -5.37       -3.24    1.8    640ms
+  6   -7.470799824642       -7.01       -3.68    2.3    573ms
+  7   -7.470799831580       -8.16       -4.11    1.9    644ms
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -7.450562811046                   -0.15    4.2    894ms
+  2   -7.469082435076       -1.73       -0.69    2.0    722ms
+  3   -7.470763066348       -2.77       -1.63    2.4    1.01s
+  4   -7.470788923900       -4.59       -2.29    1.0    550ms
+  5   -7.470793180470       -5.37       -3.26    1.8    908ms
+  6   -7.470793275601       -7.02       -3.67    2.3    606ms
+  7   -7.470793282709       -8.15       -4.08    2.1    682ms
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -7.450372639008                   -0.15    4.1    924ms
+  2   -7.469062871458       -1.73       -0.69    2.0    720ms
+  3   -7.470729366411       -2.78       -1.64    2.4    778ms
+  4   -7.470754596938       -4.60       -2.29    1.0    450ms
+  5   -7.470758854332       -5.37       -3.28    1.8    874ms
+  6   -7.470758950115       -7.02       -3.67    2.4    750ms
+  7   -7.470758957484       -8.13       -4.05    2.0    644ms
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -7.450165501977                   -0.15    4.2    1.09s
+  2   -7.469024497685       -1.72       -0.69    2.0    1.08s
+  3   -7.470677168417       -2.78       -1.64    2.4    1.17s
+  4   -7.470701816517       -4.61       -2.29    1.0    818ms
+  5   -7.470706089740       -5.37       -3.29    1.9    1.00s
+  6   -7.470706183724       -7.03       -3.67    2.4    1.13s
+  7   -7.470706191056       -8.13       -4.03    2.1    778ms
+ /cache/build/tester-amdci5-12/julialang/julia-release-1-dot-11/src/toplevel.c:886
+ijl_toplevel_eval_in at /cache/build/tester-amdci5-12/julialang/julia-release-1-dot-11/src/toplevel.c:994
+eval at ./boot.jl:430 [inlined]
+include_string at ./loading.jl:2734
+_include at ./loading.jl:2794
+include at ./Base.jl:557
+jfptr_include_46879.1 at /opt/spack-git/opt/spack/linux-debian12-zen3/gcc-12.2.0/julia-1.11.5-sl4rtitfen6fhqdzyyfbuumr7cv5tjyb/lib/julia/sys.so (unknown line)
+exec_options at ./client.jl:323
+_start at ./client.jl:531
+jfptr__start_73430.1 at /opt/spack-git/opt/spack/linux-debian12-zen3/gcc-12.2.0/julia-1.11.5-sl4rtitfen6fhqdzyyfbuumr7cv5tjyb/lib/julia/sys.so (unknown line)
+jl_apply at /cache/build/tester-amdci5-12/julialang/julia-release-1-dot-11/src/julia.h:2157 [inlined]
+true_main at /cache/build/tester-amdci5-12/julialang/julia-release-1-dot-11/src/jlapi.c:900
+jl_repl_entrypoint at /cache/build/tester-amdci5-12/julialang/julia-release-1-dot-11/src/jlapi.c:1059
+main at julia (unknown line)
+unknown function (ip: 0x7f1812f92249)
+__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8)
+Allocations: 75602980 (Pool: 75601266; Big: 1714); GC: 113

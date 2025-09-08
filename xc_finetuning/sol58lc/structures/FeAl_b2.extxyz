@@ -1,0 +1,4 @@
+2
+Lattice="2.88267515483 0.0 0.0 0.0 2.88267515483 0.0 0.0 0.0 2.88267515483" Properties=species:S:1:pos:R:3 a0_exp=2.881 a0_pbe=2.88267515483 name=FeAl crystalstructure=cesiumchloride pbc="T T T"
+Fe       0.00000000       0.00000000       0.00000000
+Al       1.44133758       1.44133758       1.44133758

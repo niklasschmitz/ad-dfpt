@@ -1,0 +1,4 @@
+2
+Lattice="2.8572458644800003 0.0 0.0 0.0 2.8572458644800003 0.0 0.0 0.0 2.8572458644800003" Properties=species:S:1:pos:R:3 a0_exp=2.854 a0_pbe=2.8572458644800003 name=CoAl crystalstructure=cesiumchloride pbc="T T T"
+Co       0.00000000       0.00000000       0.00000000
+Al       1.42862293       1.42862293       1.42862293

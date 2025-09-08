@@ -1,0 +1,4 @@
+2
+Lattice="2.8956483384599996 0.0 0.0 0.0 2.8956483384599996 0.0 0.0 0.0 2.8956483384599996" Properties=species:S:1:pos:R:3 a0_exp=2.881 a0_pbe=2.8956483384599996 name=NiAl crystalstructure=cesiumchloride pbc="T T T"
+Ni       0.00000000       0.00000000       0.00000000
+Al       1.44782417       1.44782417       1.44782417

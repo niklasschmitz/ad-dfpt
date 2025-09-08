@@ -1,0 +1,33 @@
+{
+    "file": "../Li-BCC.extxyz",
+    "functionals": "Xc(gga_x_pbe, gga_c_pbe)",
+    "pseudopotentials": "cp2k.nc.sr.pbe.v0_1.semicore.gth",
+    "Ecut": 120,
+    "kgrid": [
+        8,
+        8,
+        8
+    ],
+    "temperature": 0.00225,
+    "smearing": "DFTK.Smearing.Gaussian()",
+    "volume_scaling_range": [
+        0.94,
+        0.96,
+        0.98,
+        1.0,
+        1.02,
+        1.04,
+        1.06
+    ],
+    "energies": [
+        -7.472592524086618,
+        -7.472670737097081,
+        -7.472717587546166,
+        -7.472736149725797,
+        -7.472728525769641,
+        -7.472697116883538,
+        -7.4726435908497155
+    ],
+    "date": "2025-06-06T09:25:47.187",
+    "time": "1 minute, 25 seconds, 833 milliseconds"
+}

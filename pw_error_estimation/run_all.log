@@ -1,0 +1,26 @@
+Structures: LiF_b1 LiCl_b1 NaF_b1 NaCl_b1 BN_b3 MgO_b1 C_diamond CaO_b1 AlN_b3 LiH_b1 MgS_b1 AlP_b3 GaN_b3 GaP_b3 AlAs_b3 SiC_b3 BP_b3 BAs_b3 InAs_b3 Si_diamond InP_b3
+Total jobs: 21
+Max concurrent jobs: 5
+-------------------------------------
+Launching LiF_b1
+Launching LiCl_b1
+Launching NaF_b1
+Launching NaCl_b1
+Launching BN_b3
+Launching MgO_b1
+Launching C_diamond
+Launching CaO_b1
+Launching AlN_b3
+Launching LiH_b1
+Launching MgS_b1
+Launching AlP_b3
+Launching GaN_b3
+Launching GaP_b3
+Launching AlAs_b3
+Launching SiC_b3
+Launching BP_b3
+Launching BAs_b3
+Launching InAs_b3
+Launching Si_diamond
+Launching InP_b3
+All plane-wave error estimation jobs completed.

@@ -1,0 +1,63 @@
+┌ Info: Threading setup: 
+│   Threads.nthreads() = 1
+│   n_DFTK = 1
+│   n_fft = 1
+└   n_blas = 1
+┌ Info: 2025-05-16T11:18:11.325
+│   name = "Si"
+│   Ecut = 18.0
+│   kgrid = MonkhorstPack([14, 14, 14])
+│   p0 = ComponentVector{Float64}(a = 10.347246312603742)
+│   temperature = 0.001
+└   smearing = DFTK.Smearing.Gaussian()
+ERROR: LoadError: AssertionError: !(any(isnan, AX))
+Stacktrace:
+  [1] macro expansion
+    @ ~/.julia/packages/DFTK/n2IL4/src/eigen/lobpcg_hyper_impl.jl:362 [inlined]
+  [2] LOBPCG(A::DFTK.DftHamiltonianBlock, X::Matrix{ComplexF64}, B::UniformScaling{Bool}, precon::PreconditionerTPA{Float64}, tol::Float64, maxiter::Int64; miniter::Int64, ortho_tol::Float64, n_conv_check::Int64, display_progress::Bool)
+    @ DFTK ~/.julia/packages/TimerOutputs/6KVfH/src/TimerOutput.jl:237
+  [3] LOBPCG
+    @ ~/.julia/packages/TimerOutputs/6KVfH/src/TimerOutput.jl:230 [inlined]
+  [4] lobpcg_hyper(A::DFTK.DftHamiltonianBlock, X0::Matrix{ComplexF64}; maxiter::Int64, prec::PreconditionerTPA{Float64}, tol::Float64, largest::Bool, n_conv_check::Int64, kwargs::@Kwargs{miniter::Int64})
+    @ DFTK ~/.julia/packages/DFTK/n2IL4/src/eigen/diag_lobpcg_hyper.jl:11
+  [5] diagonalize_all_kblocks(eigensolver::typeof(lobpcg_hyper), ham::Hamiltonian, nev_per_kpoint::Int64; ψguess::Nothing, prec_type::Type{PreconditionerTPA}, interpolate_kpoints::Bool, tol::Float64, miniter::Int64, maxiter::Int64, n_conv_check::Int64)
+    @ DFTK ~/.julia/packages/DFTK/n2IL4/src/eigen/diag.jl:50
+  [6] next_density(ham::Hamiltonian, nbandsalg::AdaptiveBands, fermialg::FermiBisection; eigensolver::Function, ψ::Nothing, eigenvalues::Nothing, occupation::Nothing, kwargs::@Kwargs{miniter::Int64, tol::Float64})
+    @ DFTK ~/.julia/packages/DFTK/n2IL4/src/scf/self_consistent_field.jl:74
+  [7] (::DFTK.var"#fixpoint_map#818"{Float64, ScfConvergenceDensity, Int64, χ0Mixing, Float64, typeof(lobpcg_hyper), AdaptiveDiagtol, AdaptiveBands, FermiBisection, ScfDefaultCallback, Bool, PlaneWaveBasis{Float64, Float64, DFTK.CPU, FFTGrid{Float64, Float64, Array{StaticArraysCore.SVector{3, Int64}, 3}, Array{StaticArraysCore.SVector{3, Float64}, 3}}, Vector{StaticArraysCore.SVector{3, Int64}}}, DateTime, UInt64})(ρin::Array{Float64, 4}, info::@NamedTuple{ρin::Array{Float64, 4}, τ::Nothing, ψ::Nothing, occupation::Nothing, eigenvalues::Nothing, εF::Nothing, n_iter::Int64, n_matvec::Int64, timedout::Bool, converged::Bool, history_Etot::Vector{Float64}, history_Δρ::Vector{Float64}})
+    @ DFTK ~/.julia/packages/DFTK/n2IL4/src/scf/self_consistent_field.jl:168
+  [8] (::DFTK.var"#anderson#779"{DFTK.var"#anderson#778#780"{@Kwargs{}}})(f::DFTK.var"#fixpoint_map#818"{Float64, ScfConvergenceDensity, Int64, χ0Mixing, Float64, typeof(lobpcg_hyper), AdaptiveDiagtol, AdaptiveBands, FermiBisection, ScfDefaultCallback, Bool, PlaneWaveBasis{Float64, Float64, DFTK.CPU, FFTGrid{Float64, Float64, Array{StaticArraysCore.SVector{3, Int64}, 3}, Array{StaticArraysCore.SVector{3, Float64}, 3}}, Vector{StaticArraysCore.SVector{3, Int64}}}, DateTime, UInt64}, x0::Array{Float64, 4}, info0::@NamedTuple{ρin::Array{Float64, 4}, τ::Nothing, ψ::Nothing, occupation::Nothing, eigenvalues::Nothing, εF::Nothing, n_iter::Int64, n_matvec::Int64, timedout::Bool, converged::Bool, history_Etot::Vector{Float64}, history_Δρ::Vector{Float64}}; maxiter::Int64)
+    @ DFTK ~/.julia/packages/DFTK/n2IL4/src/scf/scf_solvers.jl:49
+  [9] macro expansion
+    @ ~/.julia/packages/DFTK/n2IL4/src/scf/self_consistent_field.jl:217 [inlined]
+ [10] self_consistent_field(basis::PlaneWaveBasis{Float64, Float64, DFTK.CPU, FFTGrid{Float64, Float64, Array{StaticArraysCore.SVector{3, Int64}, 3}, Array{StaticArraysCore.SVector{3, Float64}, 3}}, Vector{StaticArraysCore.SVector{3, Int64}}}; ρ::Array{Float64, 4}, τ::Nothing, ψ::Nothing, tol::Float64, is_converged::ScfConvergenceDensity, miniter::Int64, maxiter::Int64, maxtime::Year, mixing::χ0Mixing, damping::Float64, solver::DFTK.var"#anderson#779"{DFTK.var"#anderson#778#780"{@Kwargs{}}}, eigensolver::typeof(lobpcg_hyper), diagtolalg::AdaptiveDiagtol, nbandsalg::AdaptiveBands, fermialg::FermiBisection, callback::ScfDefaultCallback, compute_consistent_energies::Bool, response::ResponseOptions)
+    @ DFTK ~/.julia/packages/TimerOutputs/6KVfH/src/TimerOutput.jl:237
+ [11] (::var"#dftk_fg!#20"{Float64, MonkhorstPack, Float64, DFTK.Smearing.Gaussian, BlowupCHV, Vector{Any}, Float64, var"#case#4"{Matrix{Float64}, Float64, MonkhorstPack, Vector{StaticArraysCore.SVector{3, Float64}}, Vector{ElementPsp{PspUpf{Float64, Interpolations.Extrapolation{Float64, 1, Interpolations.GriddedInterpolation{Float64, 1, Vector{Float64}, Interpolations.Gridded{Interpolations.Linear{Interpolations.Throw{Interpolations.OnGrid}}}, Tuple{Vector{Float64}}}, Interpolations.Gridded{Interpolations.Linear{Interpolations.Throw{Interpolations.OnGrid}}}, Interpolations.Throw{Nothing}}}}}, Float64, Float64, String}, var"#make_pbe#30"})(E::Float64, G::ComponentVector{Float64, Vector{Float64}, Tuple{Axis{(a = 1,)}}}, p::ComponentVector{Float64, Vector{Float64}, Tuple{Axis{(a = 1,)}}}, θ::ComponentVector{Float64, Vector{Float64}, Tuple{Axis{(κ = 1, μ = 2)}}})
+    @ Main ~/project_autodiff_for_dft_examples/1_ideas/lattice_relaxation.jl:20
+ [12] #6
+    @ ~/project_autodiff_for_dft_examples/1_ideas/optimise.jl:13 [inlined]
+ [13] (::NLSolversBase.var"#69#70"{NLSolversBase.InplaceObjective{Nothing, var"#6#7"{var"#dftk_fg!#20"{Float64, MonkhorstPack, Float64, DFTK.Smearing.Gaussian, BlowupCHV, Vector{Any}, Float64, var"#case#4"{Matrix{Float64}, Float64, MonkhorstPack, Vector{StaticArraysCore.SVector{3, Float64}}, Vector{ElementPsp{PspUpf{Float64, Interpolations.Extrapolation{Float64, 1, Interpolations.GriddedInterpolation{Float64, 1, Vector{Float64}, Interpolations.Gridded{Interpolations.Linear{Interpolations.Throw{Interpolations.OnGrid}}}, Tuple{Vector{Float64}}}, Interpolations.Gridded{Interpolations.Linear{Interpolations.Throw{Interpolations.OnGrid}}}, Interpolations.Throw{Nothing}}}}}, Float64, Float64, String}, var"#make_pbe#30"}, ComponentVector{Float64, Vector{Float64}, Tuple{Axis{(κ = 1, μ = 2)}}}}, Nothing, Nothing, Nothing}, Float64})(G::ComponentVector{Float64, Vector{Float64}, Tuple{Axis{(a = 1,)}}}, x::ComponentVector{Float64, Vector{Float64}, Tuple{Axis{(a = 1,)}}})
+    @ NLSolversBase ~/.julia/packages/NLSolversBase/kavn7/src/objective_types/incomplete.jl:54
+ [14] value_gradient!!(obj::OnceDifferentiable{Float64, ComponentVector{Float64, Vector{Float64}, Tuple{Axis{(a = 1,)}}}, ComponentVector{Float64, Vector{Float64}, Tuple{Axis{(a = 1,)}}}}, x::ComponentVector{Float64, Vector{Float64}, Tuple{Axis{(a = 1,)}}})
+    @ NLSolversBase ~/.julia/packages/NLSolversBase/kavn7/src/interface.jl:82
+ [15] initial_state(method::LBFGS{Nothing, InitialStatic{Float64}, BackTracking{Float64, Int64}, Optim.var"#20#22"}, options::Optim.Options{Float64, Nothing}, d::OnceDifferentiable{Float64, ComponentVector{Float64, Vector{Float64}, Tuple{Axis{(a = 1,)}}}, ComponentVector{Float64, Vector{Float64}, Tuple{Axis{(a = 1,)}}}}, initial_x::ComponentVector{Float64, Vector{Float64}, Tuple{Axis{(a = 1,)}}})
+    @ Optim ~/.julia/packages/Optim/HvjCd/src/multivariate/solvers/first_order/l_bfgs.jl:164
+ [16] optimize
+    @ ~/.julia/packages/Optim/HvjCd/src/multivariate/optimize/optimize.jl:36 [inlined]
+ [17] optimize(f::NLSolversBase.InplaceObjective{Nothing, var"#6#7"{var"#dftk_fg!#20"{Float64, MonkhorstPack, Float64, DFTK.Smearing.Gaussian, BlowupCHV, Vector{Any}, Float64, var"#case#4"{Matrix{Float64}, Float64, MonkhorstPack, Vector{StaticArraysCore.SVector{3, Float64}}, Vector{ElementPsp{PspUpf{Float64, Interpolations.Extrapolation{Float64, 1, Interpolations.GriddedInterpolation{Float64, 1, Vector{Float64}, Interpolations.Gridded{Interpolations.Linear{Interpolations.Throw{Interpolations.OnGrid}}}, Tuple{Vector{Float64}}}, Interpolations.Gridded{Interpolations.Linear{Interpolations.Throw{Interpolations.OnGrid}}}, Interpolations.Throw{Nothing}}}}}, Float64, Float64, String}, var"#make_pbe#30"}, ComponentVector{Float64, Vector{Float64}, Tuple{Axis{(κ = 1, μ = 2)}}}}, Nothing, Nothing, Nothing}, initial_x::ComponentVector{Float64, Vector{Float64}, Tuple{Axis{(a = 1,)}}}, method::LBFGS{Nothing, InitialStatic{Float64}, BackTracking{Float64, Int64}, Optim.var"#20#22"}, options::Optim.Options{Float64, Nothing}; inplace::Bool, autodiff::Symbol)
+    @ Optim ~/.julia/packages/Optim/HvjCd/src/multivariate/optimize/interface.jl:143
+ [18] optimize
+    @ ~/.julia/packages/Optim/HvjCd/src/multivariate/optimize/interface.jl:139 [inlined]
+ [19] optimise(fg!::var"#dftk_fg!#20"{Float64, MonkhorstPack, Float64, DFTK.Smearing.Gaussian, BlowupCHV, Vector{Any}, Float64, var"#case#4"{Matrix{Float64}, Float64, MonkhorstPack, Vector{StaticArraysCore.SVector{3, Float64}}, Vector{ElementPsp{PspUpf{Float64, Interpolations.Extrapolation{Float64, 1, Interpolations.GriddedInterpolation{Float64, 1, Vector{Float64}, Interpolations.Gridded{Interpolations.Linear{Interpolations.Throw{Interpolations.OnGrid}}}, Tuple{Vector{Float64}}}, Interpolations.Gridded{Interpolations.Linear{Interpolations.Throw{Interpolations.OnGrid}}}, Interpolations.Throw{Nothing}}}}}, Float64, Float64, String}, var"#make_pbe#30"}, x0::ComponentVector{Float64, Vector{Float64}, Tuple{Axis{(a = 1,)}}}, θ::ComponentVector{Float64, Vector{Float64}, Tuple{Axis{(κ = 1, μ = 2)}}}; show_trace::Bool, kwargs::@Kwargs{f_abstol::Float64, x_tol::Int64, g_abstol::Float64})
+    @ Main ~/project_autodiff_for_dft_examples/1_ideas/optimise.jl:13
+ [20] #optimal_lattice#18
+    @ ~/project_autodiff_for_dft_examples/1_ideas/lattice_relaxation.jl:35 [inlined]
+ [21] macro expansion
+    @ ./timing.jl:581 [inlined]
+ [22] (::var"#loss_fn#32"{Vector{Any}, var"#make_pbe#30", String})(θ::ComponentVector{Float64, Vector{Float64}, Tuple{Axis{(κ = 1, μ = 2)}}}, cases::Vector{var"#case#4"{Matrix{Float64}, Float64, MonkhorstPack, Vector{StaticArraysCore.SVector{3, Float64}}, Vector{ElementPsp{PspUpf{Float64, Interpolations.Extrapolation{Float64, 1, Interpolations.GriddedInterpolation{Float64, 1, Vector{Float64}, Interpolations.Gridded{Interpolations.Linear{Interpolations.Throw{Interpolations.OnGrid}}}, Tuple{Vector{Float64}}}, Interpolations.Gridded{Interpolations.Linear{Interpolations.Throw{Interpolations.OnGrid}}}, Interpolations.Throw{Nothing}}}}}, Float64, Float64, String}})
+    @ Main ~/project_autodiff_for_dft_examples/1_ideas/xc_finetuning/train/pbe_Si_Al_V_NaCl_gridsearch/loss.jl:87
+ [23] main(workdir::String, κ::Float64, μ::Float64)
+    @ Main ~/project_autodiff_for_dft_examples/1_ideas/xc_finetuning/train/pbe_Si_Al_V_NaCl_gridsearch/loss.jl:111
+ [24] top-level scope
+    @ ~/project_autodiff_for_dft_examples/1_ideas/xc_finetuning/train/pbe_Si_Al_V_NaCl_gridsearch/loss.jl:121
+in expression starting at /home/schmitz/project_autodiff_for_dft_examples/1_ideas/xc_finetuning/train/pbe_Si_Al_V_NaCl_gridsearch/loss.jl:114

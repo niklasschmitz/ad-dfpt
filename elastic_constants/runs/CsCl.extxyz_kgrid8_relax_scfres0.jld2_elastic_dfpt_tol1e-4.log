@@ -1,0 +1,50 @@
+┌ Info: Threading setup: 
+│   Threads.nthreads() = 4
+│   n_DFTK = 4
+│   n_fft = 1
+└   n_blas = 4
+┌ Info: 2025-08-08T17:18:35.538
+│   file = "runs/CsCl.extxyz_kgrid8_relax_scfres0.jld2"
+│   v0 = 501.00102706104343
+│   Ecut = 29.0
+└   kgrid = MonkhorstPack([8, 8, 8])
+┌ Info: 2025-08-08T17:18:36.795
+│   length(model0.symmetries) = 48
+│   length(symmetries_strain) = 8
+│   strain_pattern =
+│    6-element Vector{Float64}:
+│     1.0
+└     ⋮
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -39.89835953790                   -1.11    5.2    12.1s
+  2   -39.90417687578       -2.24       -1.06    2.2    7.39s
+  3   -39.91728678859       -1.88       -1.80    3.5    4.08s
+  4   -39.91755973016       -3.56       -2.58    2.1    2.97s
+  5   -39.91758516772       -4.59       -3.17    4.1    4.18s
+  6   -39.91758569529       -6.28       -3.95    3.9    3.45s
+  7   -39.91758574036       -7.35       -4.47    4.4    6.13s
+Solving response problem
+Iter  Restart  Krydim  log10(res)  avg(CG)  Δtime   Comment
+----  -------  ------  ----------  -------  ------  ---------------
+                                     151.7   45.5s  Non-interacting
+   1        0       1        0.90    111.6   53.4s  
+   2        0       2        0.36     94.9   28.8s  
+   3        0       3       -0.45     86.0   26.1s  
+   4        0       4       -1.55     70.9   21.9s  
+   5        0       5       -2.45     43.5   14.6s  
+   6        0       6       -3.47     15.1   6.86s  
+   7        0       7       -5.16      8.0   4.98s  
+   8        1       1       -4.22    144.5   44.9s  Restart
+   9        1       2       -4.87     22.7   9.16s  
+                                     148.2   43.3s  Final orbitals
+┌ Info: 2025-08-08T17:27:42.837
+│   tol = 0.0001
+│   Ecut = 29.0
+│   c11 = 32.61107036793368
+│   c12 = 5.511029835398079
+│   c44 = 4.979193777380488
+│   stress = 6-element StaticArraysCore.SVector{6, Float64} with indices SOneTo(6): …
+└   dstress = 6-element StaticArraysCore.SVector{6, Float64} with indices SOneTo(6): …
+┌ Info: Finished.
+└   now() = 2025-08-08T17:27:43.567

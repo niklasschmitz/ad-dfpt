@@ -1,0 +1,33 @@
+{
+    "file": "../Li-XO.extxyz",
+    "functionals": "Xc(gga_x_pbe, gga_c_pbe)",
+    "pseudopotentials": "cp2k.nc.sr.pbe.v0_1.semicore.gth",
+    "Ecut": 100,
+    "kgrid": [
+        8,
+        8,
+        8
+    ],
+    "temperature": 0.00225,
+    "smearing": "DFTK.Smearing.Gaussian()",
+    "volume_scaling_range": [
+        0.94,
+        0.96,
+        0.98,
+        1.0,
+        1.02,
+        1.04,
+        1.06
+    ],
+    "energies": [
+        -11.751506222317769,
+        -11.751673008666586,
+        -11.751768331176491,
+        -11.751793082201212,
+        -11.751771866915618,
+        -11.751693009381873,
+        -11.751574415795131
+    ],
+    "date": "2025-06-05T18:17:23.417",
+    "time": "2 minutes, 13 seconds, 101 milliseconds"
+}

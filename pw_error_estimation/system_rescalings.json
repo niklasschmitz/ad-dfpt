@@ -1,0 +1,86 @@
+[
+    {
+        "name": "AlAs",
+        "rescaling": 0.5211682646328294
+    },
+    {
+        "name": "AlN",
+        "rescaling": 0.3124290498051048
+    },
+    {
+        "name": "AlP",
+        "rescaling": 0.4647456560025963
+    },
+    {
+        "name": "BAs",
+        "rescaling": 0.28707239102133575
+    },
+    {
+        "name": "BN",
+        "rescaling": 0.18463355040663285
+    },
+    {
+        "name": "BP",
+        "rescaling": 0.24086836564051647
+    },
+    {
+        "name": "C",
+        "rescaling": 0.12260170389111744
+    },
+    {
+        "name": "CaO",
+        "rescaling": 1.9503654493870375
+    },
+    {
+        "name": "GaN",
+        "rescaling": 0.4118097147215742
+    },
+    {
+        "name": "GaP",
+        "rescaling": 0.5039044607219075
+    },
+    {
+        "name": "InAs",
+        "rescaling": 0.6789455527899564
+    },
+    {
+        "name": "InP",
+        "rescaling": 0.6207878994404146
+    },
+    {
+        "name": "LiCl",
+        "rescaling": 5.187187227081864
+    },
+    {
+        "name": "LiF",
+        "rescaling": 3.5352365519444335
+    },
+    {
+        "name": "LiH",
+        "rescaling": 3.409839035985754
+    },
+    {
+        "name": "MgO",
+        "rescaling": 1.0819263791532956
+    },
+    {
+        "name": "MgS",
+        "rescaling": 1.9601517620561992
+    },
+    {
+        "name": "NaCl",
+        "rescaling": 4.089186715014472
+    },
+    {
+        "name": "NaF",
+        "rescaling": 2.498094771630732
+    },
+    {
+        "name": "SiC",
+        "rescaling": 0.2385333255715313
+    },
+    {
+        "name": "Si",
+        "rescaling": 0.35194504948316296
+    }
+]

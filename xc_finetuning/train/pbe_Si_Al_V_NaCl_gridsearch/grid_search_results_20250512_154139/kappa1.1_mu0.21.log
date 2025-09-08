@@ -1,0 +1,553 @@
+┌ Info: Threading setup: 
+│   Threads.nthreads() = 1
+│   n_DFTK = 1
+│   n_fft = 1
+└   n_blas = 1
+┌ Info: 2025-05-12T17:47:22.090
+│   name = "Si"
+│   Ecut = 18.0
+│   kgrid = MonkhorstPack([14, 14, 14])
+│   p0 = ComponentVector{Float64}(a = 10.347246312603742)
+│   temperature = 0.001
+└   smearing = DFTK.Smearing.Gaussian()
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -8.458818257007                   -0.96    7.1    11.8s
+  2   -8.460481171004       -2.78       -1.74    1.8    5.19s
+  3   -8.460557332127       -4.12       -2.76    3.8    1.72s
+  4   -8.460559171611       -5.74       -3.68    4.5    2.11s
+  5   -8.460559226294       -7.26       -4.36    4.9    1.87s
+  6   -8.460559228679       -8.62       -5.30    4.8    2.02s
+  7   -8.460559228705      -10.58       -6.09    4.3    2.18s
+  8   -8.460559228705      -12.58       -7.23    3.7    1.62s
+Iter     Function value   Gradient norm 
+     0    -8.460559e+00     5.362826e-04
+ * time: 4.601478576660156e-5
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -8.458824044089                   -0.96    7.1    2.56s
+  2   -8.460488276252       -2.78       -1.74    2.0    1.12s
+  3   -8.460557556579       -4.16       -2.76    3.8    1.99s
+  4   -8.460559449287       -5.72       -3.65    4.7    2.12s
+  5   -8.460559504380       -7.26       -4.43    4.8    1.90s
+  6   -8.460559506390       -8.70       -5.40    4.9    2.11s
+  7   -8.460559506409      -10.72       -6.18    4.4    1.88s
+  8   -8.460559506410      -12.70       -7.18    4.1    2.03s
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -8.458820994028                   -0.96    7.1    2.67s
+  2   -8.460483621357       -2.78       -1.74    1.8    1.11s
+  3   -8.460557445095       -4.13       -2.76    3.9    1.99s
+  4   -8.460559448964       -5.70       -3.66    4.6    2.25s
+  5   -8.460559504252       -7.26       -4.43    4.8    1.83s
+  6   -8.460559506389       -8.67       -5.38    5.1    2.08s
+  7   -8.460559506409      -10.68       -6.18    4.4    1.76s
+  8   -8.460559506410      -12.67       -7.19    3.9    1.87s
+     1    -8.460560e+00     4.993710e-04
+ * time: 43.75054907798767
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -8.458788935225                   -0.96    7.6    2.71s
+  2   -8.460480868746       -2.77       -1.74    2.3    1.23s
+  3   -8.460559482083       -4.10       -2.76    4.0    2.14s
+  4   -8.460561256812       -5.75       -3.67    4.8    2.30s
+  5   -8.460561311140       -7.26       -4.37    5.0    2.72s
+  6   -8.460561313420       -8.64       -5.31    5.1    2.16s
+  7   -8.460561313446      -10.59       -6.06    4.4    2.14s
+  8   -8.460561313446      -12.57       -7.22    3.9    1.65s
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -8.458785417386                   -0.96    7.6    2.82s
+  2   -8.460484825892       -2.77       -1.74    2.2    1.22s
+  3   -8.460559231827       -4.13       -2.75    4.0    2.24s
+  4   -8.460561261609       -5.69       -3.65    4.8    2.15s
+  5   -8.460561311433       -7.30       -4.44    4.9    2.20s
+  6   -8.460561313431       -8.70       -5.43    5.3    2.24s
+  7   -8.460561313446      -10.82       -6.38    4.6    2.63s
+  8   -8.460561313446      -12.87       -7.26    4.7    2.32s
+     2    -8.460561e+00     1.833059e-06
+ * time: 92.37536597251892
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -8.458789041984                   -0.96    7.5    2.69s
+  2   -8.460481524209       -2.77       -1.74    2.2    1.48s
+  3   -8.460559181571       -4.11       -2.76    4.0    1.71s
+  4   -8.460561259150       -5.68       -3.66    4.9    2.19s
+  5   -8.460561311395       -7.28       -4.43    5.0    1.87s
+  6   -8.460561313450       -8.69       -5.38    5.2    2.14s
+  7   -8.460561313470      -10.70       -6.16    4.5    2.27s
+  8   -8.460561313470      -12.67       -7.21    4.1    2.23s
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -8.458787959583                   -0.96    7.6    2.81s
+  2   -8.460484277288       -2.77       -1.74    2.2    1.54s
+  3   -8.460559132817       -4.13       -2.76    3.9    1.73s
+  4   -8.460561259290       -5.67       -3.65    5.0    2.27s
+  5   -8.460561311419       -7.28       -4.44    4.9    1.85s
+  6   -8.460561313453       -8.69       -5.40    5.1    2.19s
+  7   -8.460561313470      -10.76       -6.23    4.6    1.86s
+  8   -8.460561313470      -12.70       -7.15    4.2    2.03s
+     3    -8.460561e+00     5.117471e-09
+ * time: 137.2429449558258
+ * Status: success
+
+ * Candidate solution
+    Final objective value:     -8.460561e+00
+
+ * Found with
+    Algorithm:     L-BFGS
+
+ * Convergence measures
+    |x - x'|               = 2.65e-05 ≰ -1.0e+00
+    |x - x'|/|x'|          = 2.57e-06 ≰ 0.0e+00
+    |f(x) - f(x')|         = 2.41e-11 ≤ 1.0e-08
+    |f(x) - f(x')|/|f(x')| = 2.85e-12 ≰ 0.0e+00
+    |g(x)|                 = 5.12e-09 ≤ 1.0e-06
+
+ * Work counters
+    Seconds run:   137  (vs limit Inf)
+    Iterations:    3
+    f(x) calls:    4
+    ∇f(x) calls:   4
+
+Si: 215.456205 seconds (310.72 M allocations: 60.347 GiB, 7.44% gc time, 24.86% compilation time: <1% of which was recompilation)
+┌ Info: 2025-05-12T17:50:58.237
+│   name = "NaCl"
+│   Ecut = 44.0
+│   kgrid = MonkhorstPack([13, 13, 13])
+│   p0 = ComponentVector{Float64}(a = 10.746130571470083)
+│   temperature = 0
+└   smearing = DFTK.Smearing.None()
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -62.24692782523                   -1.13    8.5    21.0s
+  2   -62.25220076199       -2.28       -1.21    2.5    7.91s
+  3   -62.25642144246       -2.37       -2.04    3.6    9.56s
+  4   -62.25646325936       -4.38       -2.86    3.0    9.13s
+  5   -62.25646377822       -6.28       -3.44    3.9    11.1s
+  6   -62.25646389759       -6.92       -4.04    3.9    11.7s
+  7   -62.25646390040       -8.55       -4.67    3.8    11.0s
+  8   -62.25646390057       -9.75       -6.27    3.9    11.2s
+  9   -62.25646390057      -11.98       -7.00    4.6    13.4s
+Iter     Function value   Gradient norm 
+     0    -6.225646e+01     3.332283e-03
+ * time: 4.100799560546875e-5
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -62.24692903762                   -1.13    8.5    17.6s
+  2   -62.25220273478       -2.28       -1.21    2.7    7.61s
+  3   -62.25643358133       -2.37       -2.04    3.8    9.67s
+  4   -62.25647426262       -4.39       -2.87    3.1    8.98s
+  5   -62.25647477467       -6.29       -3.47    3.9    10.6s
+  6   -62.25647488810       -6.95       -4.09    3.8    10.0s
+  7   -62.25647489035       -8.65       -4.72    3.7    10.4s
+  8   -62.25647489048       -9.89       -6.35    3.8    10.5s
+  9   -62.25647489048      -12.03       -6.98    4.6    13.8s
+ 10   -62.25647489048      -13.85       -7.74    4.1    13.3s
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -62.24693108362                   -1.13    8.6    18.5s
+  2   -62.25220198109       -2.28       -1.21    2.6    9.68s
+  3   -62.25643343443       -2.37       -2.04    3.6    9.61s
+  4   -62.25647425926       -4.39       -2.86    3.1    9.19s
+  5   -62.25647477510       -6.29       -3.47    4.0    11.4s
+  6   -62.25647488807       -6.95       -4.10    3.9    12.4s
+  7   -62.25647489034       -8.64       -4.72    4.0    10.8s
+  8   -62.25647489048       -9.89       -6.34    3.9    10.6s
+  9   -62.25647489048      -12.06       -6.99    4.6    12.8s
+ 10   -62.25647489048   +  -14.15       -7.70    4.3    11.5s
+     1    -6.225647e+01     3.263799e-03
+ * time: 264.1348280906677
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -62.24656234255                   -1.13    8.6    18.7s
+  2   -62.25188987435       -2.27       -1.19    2.7    9.92s
+  3   -62.25669818788       -2.32       -2.02    3.6    11.7s
+  4   -62.25674486337       -4.33       -2.93    2.9    8.64s
+  5   -62.25674536401       -6.30       -3.59    4.0    12.1s
+  6   -62.25674546240       -7.01       -4.19    3.4    10.0s
+  7   -62.25674546401       -8.79       -4.74    3.9    11.0s
+  8   -62.25674546413       -9.91       -6.25    3.7    10.8s
+  9   -62.25674546413      -12.01       -6.99    4.4    12.1s
+ 10   -62.25674546413      -13.67       -7.53    4.3    11.6s
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -62.24656375670                   -1.13    8.5    18.8s
+  2   -62.25191507972       -2.27       -1.19    2.6    7.69s
+  3   -62.25669740359       -2.32       -2.02    3.7    10.2s
+  4   -62.25674476143       -4.32       -2.85    3.0    8.90s
+  5   -62.25674533696       -6.24       -3.44    3.8    10.9s
+  6   -62.25674546157       -6.90       -4.07    3.7    10.5s
+  7   -62.25674546398       -8.62       -4.68    3.9    11.3s
+  8   -62.25674546413       -9.83       -6.20    3.8    10.8s
+  9   -62.25674546413      -11.96       -6.95    4.4    12.4s
+ 10   -62.25674546413      -12.87       -7.62    4.1    10.9s
+     2    -6.225675e+01     2.451837e-04
+ * time: 532.0488231182098
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -62.24650522487                   -1.13    8.5    20.6s
+  2   -62.25184896703       -2.27       -1.19    2.7    7.99s
+  3   -62.25669907896       -2.31       -2.02    3.6    9.85s
+  4   -62.25674655276       -4.32       -2.90    3.0    9.05s
+  5   -62.25674706023       -6.29       -3.53    3.9    11.3s
+  6   -62.25674716896       -6.96       -4.15    3.5    10.0s
+  7   -62.25674717079       -8.74       -4.70    3.9    11.0s
+  8   -62.25674717091       -9.90       -6.12    3.6    10.5s
+  9   -62.25674717091      -11.92       -6.60    4.4    12.2s
+ 10   -62.25674717091      -13.03       -8.06    3.0    8.93s
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -62.24651065439                   -1.13    8.7    19.7s
+  2   -62.25185278316       -2.27       -1.19    2.6    8.72s
+  3   -62.25669894198       -2.31       -2.02    3.6    10.0s
+  4   -62.25674649047       -4.32       -2.88    2.9    10.2s
+  5   -62.25674705252       -6.25       -3.49    3.9    11.2s
+  6   -62.25674716859       -6.94       -4.10    3.5    10.1s
+  7   -62.25674717075       -8.67       -4.68    3.8    11.3s
+  8   -62.25674717091       -9.80       -6.12    3.7    10.7s
+  9   -62.25674717091      -11.89       -6.53    4.4    13.1s
+ 10   -62.25674717091      -14.15       -7.98    2.8    9.31s
+     3    -6.225675e+01     1.990730e-05
+ * time: 792.7443721294403
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -62.24650519001                   -1.13    8.8    21.7s
+  2   -62.25187651855       -2.27       -1.19    2.6    9.93s
+  3   -62.25669809586       -2.32       -2.01    3.9    10.6s
+  4   -62.25674649229       -4.32       -2.86    3.1    9.44s
+  5   -62.25674705729       -6.25       -3.46    3.9    10.9s
+  6   -62.25674717983       -6.91       -4.10    3.6    10.1s
+  7   -62.25674718220       -8.63       -4.73    3.9    11.0s
+  8   -62.25674718233       -9.87       -6.15    3.8    11.9s
+  9   -62.25674718233      -11.87       -6.70    4.3    12.3s
+ 10   -62.25674718233   +  -13.03       -8.01    4.0    12.0s
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -62.24650632054                   -1.13    8.6    18.1s
+  2   -62.25183788293       -2.27       -1.19    2.8    8.34s
+  3   -62.25669907936       -2.31       -2.02    3.9    10.4s
+  4   -62.25674659448       -4.32       -2.92    3.0    9.34s
+  5   -62.25674707821       -6.32       -3.57    3.9    12.0s
+  6   -62.25674718051       -6.99       -4.18    3.5    10.9s
+  7   -62.25674718223       -8.77       -4.76    4.0    12.4s
+  8   -62.25674718233      -10.00       -6.22    3.8    11.7s
+  9   -62.25674718233      -12.00       -6.98    4.3    11.8s
+ 10   -62.25674718233      -13.07       -7.65    4.4    11.8s
+     4    -6.225675e+01     1.169824e-07
+ * time: 1063.992043018341
+ * Status: success
+
+ * Candidate solution
+    Final objective value:     -6.225675e+01
+
+ * Found with
+    Algorithm:     L-BFGS
+
+ * Convergence measures
+    |x - x'|               = 1.14e-03 ≰ -1.0e+00
+    |x - x'|/|x'|          = 1.04e-04 ≰ 0.0e+00
+    |f(x) - f(x')|         = 1.14e-08 ≰ 1.0e-08
+    |f(x) - f(x')|/|f(x')| = 1.83e-10 ≰ 0.0e+00
+    |g(x)|                 = 1.17e-07 ≤ 1.0e-06
+
+ * Work counters
+    Seconds run:   1064  (vs limit Inf)
+    Iterations:    4
+    f(x) calls:    5
+    ∇f(x) calls:   5
+
+NaCl: 1196.385590 seconds (1.14 G allocations: 323.670 GiB, 5.09% gc time, 0.28% compilation time)
+┌ Info: 2025-05-12T18:10:54.663
+│   name = "Al"
+│   Ecut = 20.0
+│   kgrid = MonkhorstPack([18, 18, 18])
+│   p0 = ComponentVector{Float64}(a = 7.641925528121933)
+│   temperature = 0.001
+└   smearing = DFTK.Smearing.Gaussian()
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -2.316855502146                   -1.46    5.5    1.99s
+  2   -2.316933019119       -4.11       -1.84    1.4    793ms
+  3   -2.316949848425       -4.77       -3.59    3.2    1.32s
+  4   -2.316950064047       -6.67       -4.11    4.6    1.85s
+  5   -2.316950064476       -9.37       -4.42    2.4    1.64s
+  6   -2.316950064589       -9.95       -5.03    2.7    1.12s
+  7   -2.316950064593      -11.42       -5.76    2.5    1.34s
+  8   -2.316950064593      -12.86       -6.47    2.7    1.15s
+  9   -2.316950064593      -14.31       -7.09    2.6    1.40s
+Iter     Function value   Gradient norm 
+     0    -2.316950e+00     5.539819e-04
+ * time: 2.7894973754882812e-5
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -2.316854655442                   -1.46    5.5    2.12s
+  2   -2.316932842752       -4.11       -1.84    1.4    809ms
+  3   -2.316950187758       -4.76       -3.59    3.2    1.79s
+  4   -2.316950364693       -6.75       -4.11    4.5    2.03s
+  5   -2.316950365139       -9.35       -4.41    2.5    1.75s
+  6   -2.316950365259       -9.92       -5.01    2.6    1.54s
+  7   -2.316950365263      -11.43       -5.74    2.3    1.16s
+  8   -2.316950365263      -12.82       -6.51    2.7    1.60s
+  9   -2.316950365263      -14.18       -7.11    2.6    1.12s
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -2.316857204477                   -1.46    5.4    2.23s
+  2   -2.316932920937       -4.12       -1.84    1.3    868ms
+  3   -2.316950186059       -4.76       -3.58    3.2    1.44s
+  4   -2.316950364653       -6.75       -4.08    4.5    2.03s
+  5   -2.316950365136       -9.32       -4.40    2.5    1.40s
+  6   -2.316950365259       -9.91       -5.00    2.7    1.10s
+  7   -2.316950365263      -11.41       -5.75    2.4    1.24s
+  8   -2.316950365263      -12.85       -6.46    2.7    1.48s
+  9   -2.316950365263      -14.40       -7.07    2.5    1.09s
+     1    -2.316950e+00     5.315097e-04
+ * time: 59.40117383003235
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -2.316861699191                   -1.46    5.4    2.08s
+  2   -2.316936667557       -4.13       -1.84    1.3    817ms
+  3   -2.316953625521       -4.77       -3.56    3.3    1.68s
+  4   -2.316953871494       -6.61       -4.04    4.5    1.94s
+  5   -2.316953872089       -9.23       -4.34    2.4    1.33s
+  6   -2.316953872261       -9.77       -4.95    2.7    1.15s
+  7   -2.316953872266      -11.26       -5.59    2.4    1.35s
+  8   -2.316953872267      -12.52       -6.46    2.5    1.08s
+  9   -2.316953872267      -14.05       -7.07    3.0    1.48s
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -2.316860356364                   -1.46    5.4    2.39s
+  2   -2.316936663651       -4.12       -1.84    1.3    951ms
+  3   -2.316953636643       -4.77       -3.56    3.2    1.63s
+  4   -2.316953871489       -6.63       -4.04    4.5    1.83s
+  5   -2.316953872098       -9.22       -4.35    2.4    1.40s
+  6   -2.316953872261       -9.79       -4.95    2.8    1.21s
+  7   -2.316953872266      -11.29       -5.58    2.5    1.45s
+  8   -2.316953872267      -12.56       -6.49    2.5    1.13s
+  9   -2.316953872267      -14.03       -7.04    2.9    1.22s
+     2    -2.316954e+00     5.021795e-06
+ * time: 116.33458304405212
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -2.316857476080                   -1.46    5.4    1.78s
+  2   -2.316936639162       -4.10       -1.84    1.3    1.08s
+  3   -2.316953672380       -4.77       -3.58    3.2    1.30s
+  4   -2.316953871876       -6.70       -4.06    4.6    2.01s
+  5   -2.316953872423       -9.26       -4.36    2.4    1.07s
+  6   -2.316953872577       -9.81       -4.96    2.7    1.44s
+  7   -2.316953872582      -11.31       -5.62    2.4    1.06s
+  8   -2.316953872582      -12.60       -6.41    2.6    1.18s
+  9   -2.316953872582      -14.05       -6.88    2.8    1.42s
+ 10   -2.316953872582   +    -Inf       -7.40    1.8    901ms
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -2.316854867357                   -1.46    5.4    2.51s
+  2   -2.316936288870       -4.09       -1.84    1.3    969ms
+  3   -2.316953637596       -4.76       -3.57    3.2    1.40s
+  4   -2.316953871870       -6.63       -4.06    4.6    2.06s
+  5   -2.316953872418       -9.26       -4.36    2.3    1.05s
+  6   -2.316953872577       -9.80       -4.96    2.7    1.50s
+  7   -2.316953872582      -11.33       -5.60    2.4    1.19s
+  8   -2.316953872582      -12.59       -6.41    2.5    1.32s
+  9   -2.316953872582      -13.99       -7.11    2.7    1.40s
+     3    -2.316954e+00     2.422198e-08
+ * time: 173.90905904769897
+ * Status: success
+
+ * Candidate solution
+    Final objective value:     -2.316954e+00
+
+ * Found with
+    Algorithm:     L-BFGS
+
+ * Convergence measures
+    |x - x'|               = 1.25e-04 ≰ -1.0e+00
+    |x - x'|/|x'|          = 1.64e-05 ≰ 0.0e+00
+    |f(x) - f(x')|         = 3.15e-10 ≤ 1.0e-08
+    |f(x) - f(x')|/|f(x')| = 1.36e-10 ≰ 0.0e+00
+    |g(x)|                 = 2.42e-08 ≤ 1.0e-06
+
+ * Work counters
+    Seconds run:   174  (vs limit Inf)
+    Iterations:    3
+    f(x) calls:    4
+    ∇f(x) calls:   4
+
+Al: 207.235783 seconds (158.92 M allocations: 37.541 GiB, 6.25% gc time, 0.00% compilation time)
+┌ Info: 2025-05-12T18:14:21.899
+│   name = "V"
+│   Ecut = 42.0
+│   kgrid = MonkhorstPack([20, 20, 20])
+│   p0 = ComponentVector{Float64}(a = 5.699267600684394)
+│   temperature = 0.001
+└   smearing = DFTK.Smearing.Gaussian()
+┌ Warning: Negative ρcore detected: -3.4151886922104144e-8
+└ @ DFTK ~/.julia/packages/DFTK/n2IL4/src/terms/xc.jl:39
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -73.78540222752                   -0.89    9.7    9.84s
+  2   -73.79524391046       -2.01       -1.09    5.3    5.77s
+  3   -73.80108156132       -2.23       -1.45    6.8    7.17s
+  4   -73.80196569012       -3.05       -1.79    5.7    6.96s
+  5   -73.80210888702       -3.84       -2.22    4.9    5.49s
+  6   -73.80213104137       -4.65       -3.07    5.4    5.88s
+  7   -73.80213106243       -7.68       -3.48    4.7    5.48s
+  8   -73.80213106575       -8.48       -4.06    3.2    4.34s
+  9   -73.80213106588       -9.88       -4.47    4.6    5.48s
+ 10   -73.80213106599       -9.97       -4.79    4.7    5.13s
+ 11   -73.80213106601      -10.66       -5.62    4.6    5.19s
+ 12   -73.80213106601      -12.01       -6.34    4.7    5.84s
+ 13   -73.80213106601   +  -13.85       -6.68    5.0    6.36s
+ 14   -73.80213106601   +  -13.25       -7.03    5.2    5.71s
+┌ Warning: Negative ρcore detected: Dual{ForwardDiff.Tag{var"#19#21"{@NamedTuple{ham::Hamiltonian, basis::PlaneWaveBasis{Float64, Float64, DFTK.CPU, FFTGrid{Float64, Float64, Array{StaticArraysCore.SVector{3, Int64}, 3}, Array{StaticArraysCore.SVector{3, Float64}, 3}}, Vector{StaticArraysCore.SVector{3, Int64}}}, energies::Energies{Float64}, converged::Bool, occupation_threshold::Float64, ρ::Array{Float64, 4}, τ::Nothing, α::Float64, eigenvalues::Vector{Vector{Float64}}, occupation::Vector{Vector{Float64}}, εF::Float64, n_bands_converge::Int64, n_iter::Int64, n_matvec::Int64, ψ::Vector{Matrix{ComplexF64}}, diagonalization::Vector{@NamedTuple{λ::Vector{Vector{Float64}}, X::Vector{Matrix{ComplexF64}}, residual_norms::Vector{Vector{Float64}}, n_iter::Vector{Int64}, converged::Bool, n_matvec::Int64}}, stage::Symbol, history_Δρ::Vector{Float64}, history_Etot::Vector{Float64}, timedout::Bool, runtime_ns::UInt64, algorithm::String}, Model{Float64, Float64}, Float64, MonkhorstPack, var"#case#4"{Matrix{Float64}, Float64, MonkhorstPack, Vector{StaticArraysCore.SVector{3, Float64}}, Vector{ElementPsp{PspUpf{Float64, Interpolations.Extrapolation{Float64, 1, Interpolations.GriddedInterpolation{Float64, 1, Vector{Float64}, Interpolations.Gridded{Interpolations.Linear{Interpolations.Throw{Interpolations.OnGrid}}}, Tuple{Vector{Float64}}}, Interpolations.Gridded{Interpolations.Linear{Interpolations.Throw{Interpolations.OnGrid}}}, Interpolations.Throw{Nothing}}}}}, Float64, Float64, String}}, Float64}}(-3.4151886922104144e-8,-1.2413273474001241e-8)
+└ @ DFTK ~/.julia/packages/DFTK/n2IL4/src/terms/xc.jl:39
+Iter     Function value   Gradient norm 
+     0    -7.380213e+01     2.614346e-03
+ * time: 3.600120544433594e-5
+┌ Warning: Negative ρcore detected: -3.41050477262124e-8
+└ @ DFTK ~/.julia/packages/DFTK/n2IL4/src/terms/xc.jl:39
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -73.78544439681                   -0.89    9.7    10.0s
+  2   -73.79529138015       -2.01       -1.09    5.3    6.34s
+  3   -73.80108493416       -2.24       -1.45    6.8    7.24s
+  4   -73.80197206909       -3.05       -1.79    5.6    5.84s
+  5   -73.80211549552       -3.84       -2.23    5.0    5.55s
+  6   -73.80213735981       -4.66       -3.07    5.5    5.92s
+  7   -73.80213738076       -7.68       -3.48    5.0    5.47s
+  8   -73.80213738399       -8.49       -4.05    3.3    4.29s
+  9   -73.80213738409      -10.01       -4.43    4.8    5.65s
+ 10   -73.80213738423       -9.84       -4.77    4.7    5.20s
+ 11   -73.80213738425      -10.67       -5.62    4.6    5.48s
+ 12   -73.80213738425      -12.08       -6.33    4.7    6.00s
+ 13   -73.80213738425   +  -13.85       -6.65    4.9    6.09s
+ 14   -73.80213738425      -13.55       -7.01    5.2    5.76s
+┌ Warning: Negative ρcore detected: -3.41050477262124e-8
+└ @ DFTK ~/.julia/packages/DFTK/n2IL4/src/terms/xc.jl:39
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -73.78544580844                   -0.89    9.6    9.72s
+  2   -73.79529122946       -2.01       -1.09    5.2    5.55s
+  3   -73.80108604386       -2.24       -1.45    6.6    6.98s
+  4   -73.80197151621       -3.05       -1.79    5.6    5.77s
+  5   -73.80211553444       -3.84       -2.23    5.1    5.49s
+  6   -73.80213735960       -4.66       -3.07    5.5    5.99s
+  7   -73.80213738077       -7.67       -3.49    4.9    5.78s
+  8   -73.80213738398       -8.49       -4.04    3.2    4.30s
+  9   -73.80213738407      -10.04       -4.46    4.9    5.64s
+ 10   -73.80213738423       -9.78       -4.78    4.8    5.22s
+ 11   -73.80213738425      -10.68       -5.62    4.6    5.17s
+ 12   -73.80213738425      -12.06       -6.33    4.6    6.17s
+ 13   -73.80213738425   +  -13.85       -6.63    5.0    5.80s
+ 14   -73.80213738425   +  -13.15       -7.00    5.2    5.58s
+ 15   -73.80213738425   +  -13.85       -7.91    5.1    6.29s
+┌ Warning: Negative ρcore detected: Dual{ForwardDiff.Tag{var"#19#21"{@NamedTuple{ham::Hamiltonian, basis::PlaneWaveBasis{Float64, Float64, DFTK.CPU, FFTGrid{Float64, Float64, Array{StaticArraysCore.SVector{3, Int64}, 3}, Array{StaticArraysCore.SVector{3, Float64}, 3}}, Vector{StaticArraysCore.SVector{3, Int64}}}, energies::Energies{Float64}, converged::Bool, occupation_threshold::Float64, ρ::Array{Float64, 4}, τ::Nothing, α::Float64, eigenvalues::Vector{Vector{Float64}}, occupation::Vector{Vector{Float64}}, εF::Float64, n_bands_converge::Int64, n_iter::Int64, n_matvec::Int64, ψ::Vector{Matrix{ComplexF64}}, diagonalization::Vector{@NamedTuple{λ::Vector{Vector{Float64}}, X::Vector{Matrix{ComplexF64}}, residual_norms::Vector{Vector{Float64}}, n_iter::Vector{Int64}, converged::Bool, n_matvec::Int64}}, stage::Symbol, history_Δρ::Vector{Float64}, history_Etot::Vector{Float64}, timedout::Bool, runtime_ns::UInt64, algorithm::String}, Model{Float64, Float64}, Float64, MonkhorstPack, var"#case#4"{Matrix{Float64}, Float64, MonkhorstPack, Vector{StaticArraysCore.SVector{3, Float64}}, Vector{ElementPsp{PspUpf{Float64, Interpolations.Extrapolation{Float64, 1, Interpolations.GriddedInterpolation{Float64, 1, Vector{Float64}, Interpolations.Gridded{Interpolations.Linear{Interpolations.Throw{Interpolations.OnGrid}}}, Tuple{Vector{Float64}}}, Interpolations.Gridded{Interpolations.Linear{Interpolations.Throw{Interpolations.OnGrid}}}, Interpolations.Throw{Nothing}}}}}, Float64, Float64, String}}, Float64}}(-3.41050477262124e-8,-2.3454518319531234e-8)
+└ @ DFTK ~/.julia/packages/DFTK/n2IL4/src/terms/xc.jl:39
+     1    -7.380214e+01     2.219180e-03
+ * time: 238.94486284255981
+┌ Warning: Negative ρcore detected: -3.328488171122787e-8
+└ @ DFTK ~/.julia/packages/DFTK/n2IL4/src/terms/xc.jl:39
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -73.78575657569                   -0.89    9.7    9.22s
+  2   -73.79533990144       -2.02       -1.09    5.3    5.67s
+  3   -73.80111649280       -2.24       -1.45    6.8    7.40s
+  4   -73.80198818570       -3.06       -1.79    5.8    5.98s
+  5   -73.80213171993       -3.84       -2.22    5.0    5.98s
+  6   -73.80215350666       -4.66       -3.06    5.5    7.13s
+  7   -73.80215352891       -7.65       -3.48    5.0    6.80s
+  8   -73.80215353219       -8.48       -4.06    3.2    4.30s
+  9   -73.80215353229      -10.01       -4.41    5.0    6.39s
+ 10   -73.80215353242       -9.89       -4.76    4.4    5.25s
+ 11   -73.80215353244      -10.57       -5.51    4.7    5.20s
+ 12   -73.80215353245      -11.47       -6.20    4.5    5.32s
+ 13   -73.80215353245      -12.53       -6.57    5.0    6.17s
+ 14   -73.80215353245      -12.85       -6.80    5.4    5.80s
+ 15   -73.80215353245      -13.07       -7.80    5.3    6.15s
+┌ Warning: Negative ρcore detected: -3.328488171122787e-8
+└ @ DFTK ~/.julia/packages/DFTK/n2IL4/src/terms/xc.jl:39
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -73.78575444848                   -0.89    9.7    10.3s
+  2   -73.79533750974       -2.02       -1.09    5.3    6.84s
+  3   -73.80111490616       -2.24       -1.45    6.8    8.50s
+  4   -73.80198841240       -3.06       -1.79    5.8    6.14s
+  5   -73.80213204015       -3.84       -2.23    5.0    5.81s
+  6   -73.80215350451       -4.67       -3.07    5.5    6.01s
+  7   -73.80215352886       -7.61       -3.48    5.3    5.73s
+  8   -73.80215353215       -8.48       -4.05    3.1    4.21s
+  9   -73.80215353228       -9.90       -4.44    5.1    5.67s
+ 10   -73.80215353242       -9.84       -4.79    4.6    4.98s
+ 11   -73.80215353244      -10.60       -5.52    4.7    5.56s
+ 12   -73.80215353245      -11.52       -6.20    4.5    6.24s
+ 13   -73.80215353245      -12.38       -6.62    5.1    6.24s
+ 14   -73.80215353245      -13.07       -6.93    5.3    6.47s
+ 15   -73.80215353245      -13.00       -8.02    5.2    6.20s
+┌ Warning: Negative ρcore detected: Dual{ForwardDiff.Tag{var"#19#21"{@NamedTuple{ham::Hamiltonian, basis::PlaneWaveBasis{Float64, Float64, DFTK.CPU, FFTGrid{Float64, Float64, Array{StaticArraysCore.SVector{3, Int64}, 3}, Array{StaticArraysCore.SVector{3, Float64}, 3}}, Vector{StaticArraysCore.SVector{3, Int64}}}, energies::Energies{Float64}, converged::Bool, occupation_threshold::Float64, ρ::Array{Float64, 4}, τ::Nothing, α::Float64, eigenvalues::Vector{Vector{Float64}}, occupation::Vector{Vector{Float64}}, εF::Float64, n_bands_converge::Int64, n_iter::Int64, n_matvec::Int64, ψ::Vector{Matrix{ComplexF64}}, diagonalization::Vector{@NamedTuple{λ::Vector{Vector{Float64}}, X::Vector{Matrix{ComplexF64}}, residual_norms::Vector{Vector{Float64}}, n_iter::Vector{Int64}, converged::Bool, n_matvec::Int64}}, stage::Symbol, history_Δρ::Vector{Float64}, history_Etot::Vector{Float64}, timedout::Bool, runtime_ns::UInt64, algorithm::String}, Model{Float64, Float64}, Float64, MonkhorstPack, var"#case#4"{Matrix{Float64}, Float64, MonkhorstPack, Vector{StaticArraysCore.SVector{3, Float64}}, Vector{ElementPsp{PspUpf{Float64, Interpolations.Extrapolation{Float64, 1, Interpolations.GriddedInterpolation{Float64, 1, Vector{Float64}, Interpolations.Gridded{Interpolations.Linear{Interpolations.Throw{Interpolations.OnGrid}}}, Tuple{Vector{Float64}}}, Interpolations.Gridded{Interpolations.Linear{Interpolations.Throw{Interpolations.OnGrid}}}, Interpolations.Throw{Nothing}}}}}, Float64, Float64, String}}, Float64}}(-3.328488171122787e-8,-8.937621857788535e-8)
+└ @ DFTK ~/.julia/packages/DFTK/n2IL4/src/terms/xc.jl:39
+     2    -7.380215e+01     2.703487e-05
+ * time: 490.14156889915466
+┌ Warning: Negative ρcore detected: -3.330060148159874e-8
+└ @ DFTK ~/.julia/packages/DFTK/n2IL4/src/terms/xc.jl:39
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -73.78575264654                   -0.89    9.8    9.41s
+  2   -73.79533597904       -2.02       -1.09    5.4    5.77s
+  3   -73.80111635006       -2.24       -1.45    6.8    7.27s
+  4   -73.80198834087       -3.06       -1.79    5.7    5.91s
+  5   -73.80213189856       -3.84       -2.22    5.1    5.58s
+  6   -73.80215350691       -4.67       -3.06    5.6    6.14s
+  7   -73.80215353124       -7.61       -3.48    5.2    5.79s
+  8   -73.80215353450       -8.49       -4.08    3.2    4.30s
+  9   -73.80215353457      -10.16       -4.42    5.2    5.95s
+ 10   -73.80215353473       -9.79       -4.78    4.6    5.05s
+ 11   -73.80215353475      -10.58       -5.52    4.6    5.27s
+ 12   -73.80215353476      -11.47       -6.21    4.5    5.51s
+ 13   -73.80215353476      -12.45       -6.61    5.1    5.87s
+ 14   -73.80215353476      -13.00       -6.92    5.2    5.67s
+ 15   -73.80215353476   +    -Inf       -7.99    5.2    5.82s
+┌ Warning: Negative ρcore detected: -3.330060148159874e-8
+└ @ DFTK ~/.julia/packages/DFTK/n2IL4/src/terms/xc.jl:39
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -73.78575086393                   -0.89    9.7    9.79s
+  2   -73.79532965217       -2.02       -1.09    5.3    5.68s
+  3   -73.80111700498       -2.24       -1.45    6.9    7.27s
+  4   -73.80198833828       -3.06       -1.79    5.7    6.07s
+  5   -73.80213193909       -3.84       -2.22    5.0    5.61s
+  6   -73.80215350540       -4.67       -3.06    5.6    6.13s
+  7   -73.80215353122       -7.59       -3.49    5.2    5.88s
+  8   -73.80215353449       -8.49       -4.08    3.3    4.56s
+  9   -73.80215353456      -10.19       -4.42    5.2    6.07s
+ 10   -73.80215353473       -9.76       -4.79    4.4    5.01s
+ 11   -73.80215353475      -10.58       -5.53    4.7    5.38s
+ 12   -73.80215353476      -11.50       -6.21    4.5    5.46s
+ 13   -73.80215353476      -12.55       -6.62    5.1    5.87s
+ 14   -73.80215353476      -12.67       -6.92    5.2    5.87s
+ 15   -73.80215353476   +  -13.25       -8.01    5.3    5.92s
+┌ Warning: Negative ρcore detected: Dual{ForwardDiff.Tag{var"#19#21"{@NamedTuple{ham::Hamiltonian, basis::PlaneWaveBasis{Float64, Float64, DFTK.CPU, FFTGrid{Float64, Float64, Array{StaticArraysCore.SVector{3, Int64}, 3}, Array{StaticArraysCore.SVector{3, Float64}, 3}}, Vector{StaticArraysCore.SVector{3, Int64}}}, energies::Energies{Float64}, converged::Bool, occupation_threshold::Float64, ρ::Array{Float64, 4}, τ::Nothing, α::Float64, eigenvalues::Vector{Vector{Float64}}, occupation::Vector{Vector{Float64}}, εF::Float64, n_bands_converge::Int64, n_iter::Int64, n_matvec::Int64, ψ::Vector{Matrix{ComplexF64}}, diagonalization::Vector{@NamedTuple{λ::Vector{Vector{Float64}}, X::Vector{Matrix{ComplexF64}}, residual_norms::Vector{Vector{Float64}}, n_iter::Vector{Int64}, converged::Bool, n_matvec::Int64}}, stage::Symbol, history_Δρ::Vector{Float64}, history_Etot::Vector{Float64}, timedout::Bool, runtime_ns::UInt64, algorithm::String}, Model{Float64, Float64}, Float64, MonkhorstPack, var"#case#4"{Matrix{Float64}, Float64, MonkhorstPack, Vector{StaticArraysCore.SVector{3, Float64}}, Vector{ElementPsp{PspUpf{Float64, Interpolations.Extrapolation{Float64, 1, Interpolations.GriddedInterpolation{Float64, 1, Vector{Float64}, Interpolations.Gridded{Interpolations.Linear{Interpolations.Throw{Interpolations.OnGrid}}}, Tuple{Vector{Float64}}}, Interpolations.Gridded{Interpolations.Linear{Interpolations.Throw{Interpolations.OnGrid}}}, Interpolations.Throw{Nothing}}}}}, Float64, Float64, String}}, Float64}}(-3.330060148159874e-8,-8.854351582579676e-8)
+└ @ DFTK ~/.julia/packages/DFTK/n2IL4/src/terms/xc.jl:39
+     3    -7.380215e+01     2.967132e-07
+ * time: 732.6211049556732
+ * Status: success
+
+ * Candidate solution
+    Final objective value:     -7.380215e+01
+
+ * Found with
+    Algorithm:     L-BFGS
+
+ * Convergence measures
+    |x - x'|               = 1.77e-04 ≰ -1.0e+00
+    |x - x'|/|x'|          = 3.11e-05 ≰ 0.0e+00
+    |f(x) - f(x')|         = 2.31e-09 ≤ 1.0e-08
+    |f(x) - f(x')|/|f(x')| = 3.13e-11 ≰ 0.0e+00
+    |g(x)|                 = 2.97e-07 ≤ 1.0e-06
+
+ * Work counters
+    Seconds run:   733  (vs limit Inf)
+    Iterations:    3
+    f(x) calls:    4
+    ∇f(x) calls:   4
+
+V: 864.272576 seconds (582.26 M allocations: 276.066 GiB, 5.92% gc time, 0.01% compilation time)

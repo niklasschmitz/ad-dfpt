@@ -1,0 +1,209 @@
+┌ Info: Threading setup: 
+│   Threads.nthreads() = 4
+│   n_DFTK = 4
+│   n_fft = 1
+└   n_blas = 4
+┌ Warning: The provided cell is a supercell: the returned k-path is the standard k-path of the associated primitive cell in the basis of the supercell reciprocal lattice.
+│   cell =
+│    Spglib.SpglibCell{Float64, Float64, Int64, Float64}
+│     lattice:
+│       10.26121285671793  0.0  0.0
+│       0.0  10.26121285671793  0.0
+│       0.0  0.0  10.26121285671793
+│     8 atomic positions:
+│       0.25  0.25  0.0
+│       0.5  0.5  0.25
+│       0.25  0.75  0.5
+│       0.5  1.0  0.75
+│       0.75  0.25  0.5
+│       1.0  0.5  0.75
+│       0.75  0.75  0.0
+│       1.0  1.0  0.25
+│     8 atoms:
+│       1  1  1  1  1  1  1  1
+│     8 magmoms:
+│       0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0
+│    
+└ @ BrillouinSpglibExt ~/.julia/packages/Brillouin/FwrEN/ext/BrillouinSpglibExt.jl:28
+now() = DateTime("2025-02-24T13:51:50.336")
+Ecut = 30
+nkpt = 4
+θ = (κ = 0.804, cloc1 = -6.26928833, strain = 0.0, displacement = SubArray{Float64, 1, Vector{Float64}, Tuple{UnitRange{Int64}}, true}[[0.25, 0.25, 0.0], [0.25, 0.25, 0.0], [0.25, 0.25, 0.0], [0.25, 0.25, 0.0], [0.25, 0.25, 0.0], [0.25, 0.25, 0.0], [0.35, 0.27, 0.0], [0.25, 0.25, 0.0]])
+now() = DateTime("2025-02-24T13:51:50.686")
+"Run basic SCF without derivatives" = "Run basic SCF without derivatives"
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -31.41698962271                   -0.40    6.9    17.7s
+  2   -31.43163003950       -1.83       -1.15    1.4    6.96s
+  3   -31.42702817578   +   -2.34       -1.40    3.3    6.83s
+  4   -31.43428930466       -2.14       -1.65    5.1    7.80s
+  5   -31.43765966750       -2.47       -2.43    2.0    4.74s
+  6   -31.43778354767       -3.91       -2.65    3.0    6.76s
+  7   -31.43780240458       -4.72       -2.99    2.0    5.15s
+  8   -31.43780815497       -5.24       -3.46    2.0    5.49s
+  9   -31.43780888197       -6.14       -4.14    2.3    5.61s
+ 10   -31.43780891190       -7.52       -4.53    2.8    6.16s
+ 11   -31.43780891477       -8.54       -4.79    2.3    5.92s
+ 12   -31.43780891636       -8.80       -5.39    2.1    5.22s
+ 13   -31.43780891647       -9.95       -5.83    2.2    5.63s
+ 14   -31.43780891648      -11.06       -6.35    2.2    5.32s
+ 15   -31.43780891648      -12.10       -6.64    2.5    5.78s
+ 16   -31.43780891648      -12.51       -7.12    2.4    5.52s
+ 17   -31.43780891648      -13.50       -7.75    2.0    5.87s
+ 18   -31.43780891648   +  -14.45       -8.24    2.1    5.82s
+ 19   -31.43780891648      -13.67       -8.51    2.6    5.91s
+ 20   -31.43780891648      -13.85       -8.93    2.4    5.68s
+ 21   -31.43780891648   +  -13.55       -9.50    2.0    5.90s
+ 22   -31.43780891648   +  -13.85       -9.98    2.0    5.51s
+ 23   -31.43780891648      -13.85      -10.42    2.3    5.78s
+now() = DateTime("2025-02-24T13:55:56.482")
+"Run Xc derivative (no symmetry-breaking)" = "Run Xc derivative (no symmetry-breaking)"
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -31.41696700449                   -0.40    6.8    8.78s
+  2   -31.43163115098       -1.83       -1.15    1.5    3.99s
+  3   -31.42686279925   +   -2.32       -1.40    3.3    6.80s
+  4   -31.43428535359       -2.13       -1.65    5.0    7.59s
+  5   -31.43766045426       -2.47       -2.43    2.0    4.87s
+  6   -31.43778342723       -3.91       -2.65    3.0    6.84s
+  7   -31.43780240551       -4.72       -2.99    2.0    5.01s
+  8   -31.43780814982       -5.24       -3.46    2.0    5.48s
+  9   -31.43780888149       -6.14       -4.14    2.3    5.50s
+ 10   -31.43780891233       -7.51       -4.54    2.8    6.14s
+ 11   -31.43780891481       -8.61       -4.79    2.3    5.69s
+ 12   -31.43780891636       -8.81       -5.39    2.2    5.12s
+ 13   -31.43780891647       -9.95       -5.85    2.2    5.64s
+ 14   -31.43780891648      -11.11       -6.36    2.2    5.36s
+ 15   -31.43780891648      -12.14       -6.66    2.4    5.88s
+ 16   -31.43780891648      -12.54       -7.12    2.4    5.34s
+ 17   -31.43780891648      -13.60       -7.78    2.0    5.63s
+ 18   -31.43780891648   +  -14.45       -8.25    2.2    5.46s
+ 19   -31.43780891648      -13.67       -8.56    2.3    5.77s
+ 20   -31.43780891648   +  -13.85       -8.92    2.8    6.07s
+ 21   -31.43780891648   +  -13.67       -9.52    2.0    5.57s
+ 22   -31.43780891648      -14.15      -10.06    2.0    5.73s
+Solving response problem
+[ Info: GMRES linsolve starts with norm of residual = 1.68e-01
+[ Info: GMRES linsolve in iteration 1; step 1: normres = 2.76e-02
+[ Info: GMRES linsolve in iteration 1; step 2: normres = 1.12e-02
+[ Info: GMRES linsolve in iteration 1; step 3: normres = 2.61e-03
+[ Info: GMRES linsolve in iteration 1; step 4: normres = 8.91e-04
+[ Info: GMRES linsolve in iteration 1; step 5: normres = 3.11e-04
+[ Info: GMRES linsolve in iteration 1; step 6: normres = 7.95e-05
+[ Info: GMRES linsolve in iteration 1; step 7: normres = 2.69e-05
+[ Info: GMRES linsolve in iteration 1; step 8: normres = 9.02e-06
+[ Info: GMRES linsolve in iteration 1; step 9: normres = 2.27e-06
+[ Info: GMRES linsolve in iteration 1; step 10: normres = 5.37e-07
+[ Info: GMRES linsolve in iteration 1; step 11: normres = 1.10e-07
+[ Info: GMRES linsolve in iteration 1; step 12: normres = 4.41e-08
+[ Info: GMRES linsolve in iteration 1; step 13: normres = 1.23e-08
+[ Info: GMRES linsolve in iteration 1; step 14: normres = 2.76e-09
+[ Info: GMRES linsolve in iteration 1; step 15: normres = 8.89e-10
+[ Info: GMRES linsolve in iteration 1; step 16: normres = 2.79e-10
+┌ Info: GMRES linsolve converged at iteration 1, step 17:
+│ * norm of residual = 8.09e-11
+└ * number of operations = 19
+now() = DateTime("2025-02-24T14:52:32.416")
+"Run Psp derivative (no symmetry-breaking)" = "Run Psp derivative (no symmetry-breaking)"
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -31.41699246037                   -0.40    6.9    8.92s
+  2   -31.43161313215       -1.84       -1.15    1.5    4.06s
+  3   -31.42675243648   +   -2.31       -1.40    3.4    6.48s
+  4   -31.43428403930       -2.12       -1.65    4.9    7.34s
+  5   -31.43765713207       -2.47       -2.42    2.0    4.68s
+  6   -31.43778299411       -3.90       -2.64    3.0    6.68s
+  7   -31.43780224462       -4.72       -2.98    2.0    4.99s
+  8   -31.43780810655       -5.23       -3.45    2.0    5.30s
+  9   -31.43780888261       -6.11       -4.15    2.3    5.23s
+ 10   -31.43780891141       -7.54       -4.51    2.8    6.10s
+ 11   -31.43780891471       -8.48       -4.78    2.3    5.74s
+ 12   -31.43780891634       -8.79       -5.35    2.2    5.28s
+ 13   -31.43780891647       -9.88       -5.84    2.2    5.59s
+ 14   -31.43780891648      -11.08       -6.34    2.3    5.56s
+ 15   -31.43780891648      -12.08       -6.65    2.3    5.58s
+ 16   -31.43780891648      -12.55       -7.14    2.5    5.53s
+ 17   -31.43780891648      -13.27       -7.79    2.0    5.55s
+ 18   -31.43780891648   +  -14.45       -8.30    2.1    5.52s
+ 19   -31.43780891648   +  -13.85       -8.56    2.5    5.80s
+ 20   -31.43780891648      -13.85       -8.89    2.6    5.41s
+ 21   -31.43780891648   +  -14.15       -9.56    2.0    5.23s
+ 22   -31.43780891648   +    -Inf      -10.13    2.0    5.59s
+Solving response problem
+[ Info: GMRES linsolve starts with norm of residual = 3.73e-01
+[ Info: GMRES linsolve in iteration 1; step 1: normres = 7.34e-02
+[ Info: GMRES linsolve in iteration 1; step 2: normres = 3.05e-02
+[ Info: GMRES linsolve in iteration 1; step 3: normres = 6.37e-03
+[ Info: GMRES linsolve in iteration 1; step 4: normres = 1.68e-03
+[ Info: GMRES linsolve in iteration 1; step 5: normres = 6.95e-04
+[ Info: GMRES linsolve in iteration 1; step 6: normres = 1.80e-04
+[ Info: GMRES linsolve in iteration 1; step 7: normres = 4.51e-05
+[ Info: GMRES linsolve in iteration 1; step 8: normres = 7.59e-06
+[ Info: GMRES linsolve in iteration 1; step 9: normres = 3.01e-06
+[ Info: GMRES linsolve in iteration 1; step 10: normres = 8.05e-07
+[ Info: GMRES linsolve in iteration 1; step 11: normres = 2.09e-07
+[ Info: GMRES linsolve in iteration 1; step 12: normres = 8.69e-08
+[ Info: GMRES linsolve in iteration 1; step 13: normres = 2.07e-08
+[ Info: GMRES linsolve in iteration 1; step 14: normres = 5.56e-09
+[ Info: GMRES linsolve in iteration 1; step 15: normres = 1.95e-09
+[ Info: GMRES linsolve in iteration 1; step 16: normres = 5.87e-10
+[ Info: GMRES linsolve in iteration 1; step 17: normres = 1.40e-10
+┌ Info: GMRES linsolve converged at iteration 1, step 18:
+│ * norm of residual = 3.18e-11
+└ * number of operations = 20
+now() = DateTime("2025-02-24T15:51:50.871")
+"Run isotropic strain derivative (no symmetry-breaking)" = "Run isotropic strain derivative (no symmetry-breaking)"
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -31.41699501783                   -0.40    6.9    8.86s
+  2   -31.43157738449       -1.84       -1.15    1.5    4.11s
+  3   -31.42650477050   +   -2.29       -1.39    3.3    6.77s
+  4   -31.43430097668       -2.11       -1.65    5.1    7.33s
+  5   -31.43765387529       -2.47       -2.42    2.0    4.71s
+  6   -31.43778278554       -3.89       -2.64    3.0    6.69s
+  7   -31.43780220512       -4.71       -2.98    2.0    5.01s
+  8   -31.43780809505       -5.23       -3.45    2.0    5.17s
+  9   -31.43780887907       -6.11       -4.13    2.3    5.37s
+ 10   -31.43780891180       -7.49       -4.52    2.9    6.24s
+ 11   -31.43780891467       -8.54       -4.78    2.3    5.82s
+ 12   -31.43780891635       -8.77       -5.38    2.1    4.98s
+ 13   -31.43780891647       -9.92       -5.80    2.2    5.68s
+ 14   -31.43780891648      -11.03       -6.33    2.2    5.32s
+ 15   -31.43780891648      -12.07       -6.63    2.5    5.89s
+ 16   -31.43780891648      -12.50       -7.08    2.4    5.58s
+ 17   -31.43780891648      -13.22       -7.73    2.0    5.25s
+ 18   -31.43780891648   +  -13.97       -8.15    2.1    5.53s
+ 19   -31.43780891648      -14.15       -8.51    2.2    5.25s
+ 20   -31.43780891648      -14.45       -8.86    2.7    5.93s
+ 21   -31.43780891648   +  -13.97       -9.45    2.0    5.51s
+ 22   -31.43780891648   +    -Inf       -9.94    2.0    5.16s
+ 23   -31.43780891648      -14.15      -10.41    2.2    5.66s
+Solving response problem
+[ Info: GMRES linsolve starts with norm of residual = 2.58e+01
+[ Info: GMRES linsolve in iteration 1; step 1: normres = 4.35e+00
+[ Info: GMRES linsolve in iteration 1; step 2: normres = 2.09e+00
+[ Info: GMRES linsolve in iteration 1; step 3: normres = 4.77e-01
+[ Info: GMRES linsolve in iteration 1; step 4: normres = 9.67e-02
+[ Info: GMRES linsolve in iteration 1; step 5: normres = 3.80e-02
+[ Info: GMRES linsolve in iteration 1; step 6: normres = 8.63e-03
+[ Info: GMRES linsolve in iteration 1; step 7: normres = 2.66e-03
+[ Info: GMRES linsolve in iteration 1; step 8: normres = 8.73e-04
+[ Info: GMRES linsolve in iteration 1; step 9: normres = 1.92e-04
+[ Info: GMRES linsolve in iteration 1; step 10: normres = 5.10e-05
+[ Info: GMRES linsolve in iteration 1; step 11: normres = 1.84e-05
+[ Info: GMRES linsolve in iteration 1; step 12: normres = 5.79e-06
+[ Info: GMRES linsolve in iteration 1; step 13: normres = 1.33e-06
+[ Info: GMRES linsolve in iteration 1; step 14: normres = 3.78e-07
+[ Info: GMRES linsolve in iteration 1; step 15: normres = 1.40e-07
+[ Info: GMRES linsolve in iteration 1; step 16: normres = 4.00e-08
+[ Info: GMRES linsolve in iteration 1; step 17: normres = 7.41e-09
+[ Info: GMRES linsolve in iteration 1; step 18: normres = 1.97e-09
+[ Info: GMRES linsolve in iteration 1; step 19: normres = 8.15e-10
+[ Info: GMRES linsolve in iteration 1; step 20: normres = 2.18e-10
+[ Info: GMRES linsolve in iteration 1; step 21: normres = 9.62e-11
+[ Info: GMRES linsolve in iteration 2; step 1: normres = 4.73e-11
+┌ Info: GMRES linsolve converged at iteration 2, step 2:
+│ * norm of residual = 1.47e-11
+└ * number of operations = 25
+now() = DateTime("2025-02-24T17:09:40.200")
+"Finished." = "Finished."
