@@ -74,3 +74,10 @@ All data in this repository, except where noted below, is licensed under [the **
 **Exceptions**:
 - The Sol58LC dataset in `xc_finetuning/sol58lc`. See [the corresponding README](xc_finetuning/sol58lc/README.md).
 - The all-electron data in `pseudopotential_tuning/all_electron_data`. See [the corresponding README](pseudopotential_tuning/all_electron_data/README.md).
+
+## Funding
+
+This research was supported by
+the Swiss National Science Foundation (SNSF, Grant No. 221186)
+as well as the NCCR MARVEL, a National Centre of Competence in Research,
+funded by the SNSF (Grant No. 205602).
