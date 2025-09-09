@@ -44,3 +44,33 @@ The examples sections from the paper map as follows to this repository:
    - For the final plot, see [2_analysis.ipynb](pw_error_estimation/2_analysis.ipynb)
    - For rerunning all computations, see [run_all.sh](pw_error_estimation/run_all.sh).
 
+## License
+All code in this repository is licensed under the MIT license.
+
+> MIT License
+>
+> Copyright (c) 2025 Niklas F. Schmitz and collaborators
+>
+> Permission is hereby granted, free of charge, to any person obtaining a copy
+> of this software and associated documentation files (the "Software"), to deal
+> in the Software without restriction, including without limitation the rights
+> to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+> copies of the Software, and to permit persons to whom the Software is
+> furnished to do so, subject to the following conditions:
+>
+> The above copyright notice and this permission notice shall be included in all
+> copies or substantial portions of the Software.
+>
+> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+> IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+> FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+> AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+> LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+> OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+> SOFTWARE.
+
+All data in this repository, except where noted below, is licensed under [the **Creative Commons Attribution 4.0 (CC-BY 4.0)** license](https://creativecommons.org/licenses/by/4.0/legalcode.en).
+
+**Exceptions**:
+- The Sol58LC dataset in `xc_finetuning/sol58lc`. See [the corresponding README](xc_finetuning/sol58lc/README.md).
+- The all-electron data in `pseudopotential_tuning/all_electron_data`. See [the corresponding README](pseudopotential_tuning/all_electron_data/README.md).
