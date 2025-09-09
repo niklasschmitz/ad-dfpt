@@ -8,7 +8,7 @@ Supporting information containing structures, raw data and computational scripts
 materials design, error control and learning model parameters*  
 > Preprint on arxiv: **TODO add link**
 
-The code in this repository has been used to run all calculations and produce all plots of the above paper. It relies on [DFTK](dftk.org) version 0.7.16.
+The code in this repository has been used to run all calculations and produce all plots of the above paper. It relies on [DFTK version 0.7.16](https://github.com/JuliaMolSim/DFTK.jl/releases/tag/v0.7.16).
 
 ## Running the code and reproducing the plots
 
