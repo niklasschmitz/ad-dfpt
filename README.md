@@ -6,7 +6,7 @@ Supporting information containing structures, raw data and computational scripts
 > Niklas Frederik Schmitz, Bruno Ploumhans, Michael F. Herbst.  
 > *Algorithmic differentiation for plane-wave DFT:
 materials design, error control and learning model parameters*  
-> Preprint on arxiv: **TODO add link**
+> Preprint on arxiv: https://arxiv.org/abs/2509.07785
 
 The code in this repository has been used to run all calculations and produce all plots of the above paper. It relies on [DFTK version 0.7.16](https://github.com/JuliaMolSim/DFTK.jl/releases/tag/v0.7.16).
 
