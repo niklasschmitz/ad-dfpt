@@ -4,9 +4,24 @@
 Supporting information containing structures, raw data and computational scripts for the paper:
 
 > Niklas Frederik Schmitz, Bruno Ploumhans, Michael F. Herbst.  
-> *Algorithmic differentiation for plane-wave DFT:
-materials design, error control and learning model parameters*  
-> Preprint on arxiv: https://arxiv.org/abs/2509.07785
+> Algorithmic differentiation for plane-wave DFT:
+materials design, error control and learning model parameters.
+> *npj Computational Materials* **12**, 6 (2026). https://doi.org/10.1038/s41524-025-01880-3
+> arxiv: https://arxiv.org/abs/2509.07785
+
+If you use this code, please cite:
+```bibtex
+@article{Schmitz2026addfpt,
+  author = {Schmitz, Niklas Frederik and Ploumhans, Bruno and Herbst, Michael F.},
+  doi = {10.1038/s41524-025-01880-3},
+  journal = {npj Computational Materials},
+  title = {Algorithmic differentiation for plane-wave DFT: materials design, error control and learning model parameters},
+  year = {2026},
+  volume = {12},
+  number = {1},
+  pages  = {6},
+}
+```
 
 The code in this repository has been used to run all calculations and produce all plots of the above paper. It relies on [DFTK version 0.7.16](https://github.com/JuliaMolSim/DFTK.jl/releases/tag/v0.7.16).
 
